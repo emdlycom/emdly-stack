@@ -1,6 +1,6 @@
 {
-    "generated": "2026-08-30T18:00:06+00:00",
-    "count": 31,
+    "generated": "2026-08-30T19:00:05+00:00",
+    "count": 32,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -241,6 +241,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/sevzero/k8s-incident-triage",
             "raw": "https://emdly.com/raw/sevzero/k8s-incident-triage.md"
+        },
+        {
+            "id": "launifycorp/linux-web-server-triage",
+            "name": "linux-web-server-triage",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/linux-web-server-triage.md",
+            "description": "Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for \"down\" and \"slow\", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates.",
+            "version": "v2",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/linux-web-server-triage",
+            "raw": "https://emdly.com/raw/launifycorp/linux-web-server-triage.md"
         },
         {
             "id": "shopmetric/ga4-funnel-analyst",

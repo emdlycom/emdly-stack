@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 31 skills · updated 2026-08-30.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 32 skills · updated 2026-08-30.
 
 ## Categories
 
@@ -10,7 +10,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
 - [Design](#design) (1)
-- [Development](#development) (3)
+- [Development](#development) (4)
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (3)
 - [Email & outreach](#email-outreach) (2)
@@ -60,6 +60,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | ★ 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
+| [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v2 | 🛡 |
 
 ## Docs & changelogs
 
