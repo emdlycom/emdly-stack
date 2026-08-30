@@ -1,6 +1,6 @@
 {
-    "generated": "2026-08-30T19:00:05+00:00",
-    "count": 32,
+    "generated": "2026-08-30T20:00:05+00:00",
+    "count": 35,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -249,7 +249,7 @@
             "category_slug": "development",
             "path": "development/linux-web-server-triage.md",
             "description": "Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for \"down\" and \"slow\", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates.",
-            "version": "v2",
+            "version": "v3",
             "license": "MIT",
             "recommended": false,
             "security_checked": true,
@@ -286,6 +286,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/cartlift/product-feed-optimizer",
             "raw": "https://emdly.com/raw/cartlift/product-feed-optimizer.md"
+        },
+        {
+            "id": "launifycorp/product-translator",
+            "name": "product-translator",
+            "category": "Ecommerce",
+            "category_slug": "ecommerce",
+            "path": "ecommerce/product-translator.md",
+            "description": "Localises e-shop product records into a new market: titles, descriptions, attributes, categories and slugs. Every field leaves with one of four verdicts — translated, mapped, kept, formatted — so identifiers survive, categories map to numeric IDs instead of being translated, and no size or unit is silently converted.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/product-translator",
+            "raw": "https://emdly.com/raw/launifycorp/product-translator.md"
         },
         {
             "id": "shopmetric/search-console-auditor",
@@ -333,6 +348,21 @@
             "raw": "https://emdly.com/raw/pixelforge/playtest-feedback-triage.md"
         },
         {
+            "id": "launifycorp/jira-sprint-summary",
+            "name": "jira-sprint-summary",
+            "category": "Ticket ops",
+            "category_slug": "ticket-ops",
+            "path": "ticket-ops/jira-sprint-summary.md",
+            "description": "The outward-facing report after a sprint closes: a verdict against the sprint goal, committed versus delivered, blockers with a measured duration and a named dependency, hours grouped by work area with coverage stated first, and at most three improvements that each cite a number. Never per person.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/jira-sprint-summary",
+            "raw": "https://emdly.com/raw/launifycorp/jira-sprint-summary.md"
+        },
+        {
             "id": "opsmith/jira-ticket-scorer",
             "name": "jira-ticket-scorer",
             "category": "Ticket ops",
@@ -376,6 +406,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/deckhand/prd-sharpener",
             "raw": "https://emdly.com/raw/deckhand/prd-sharpener.md"
+        },
+        {
+            "id": "launifycorp/seo-audit",
+            "name": "seo-audit",
+            "category": "SEO",
+            "category_slug": "seo",
+            "path": "seo/seo-audit.md",
+            "description": "Technical SEO audit that starts from one URL and works outward, ordered by consequence rather than by ease of checking: resolve, crawlability, indexability, rendering, canonicalisation, on-page, structured data, hreflang, speed. Every threshold is quoted from Google or the sitemaps protocol, or labelled as the skill's own judgment.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/seo-audit",
+            "raw": "https://emdly.com/raw/launifycorp/seo-audit.md"
         },
         {
             "id": "rankcraft/seo-brief-builder",

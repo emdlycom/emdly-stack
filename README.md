@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 32 skills · updated 2026-08-30.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 35 skills · updated 2026-08-30.
 
 ## Categories
 
@@ -12,19 +12,19 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Design](#design) (1)
 - [Development](#development) (4)
 - [Docs & changelogs](#docs-changelogs) (2)
-- [Ecommerce](#ecommerce) (3)
+- [Ecommerce](#ecommerce) (4)
 - [Email & outreach](#email-outreach) (2)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
 - [Product](#product) (1)
 - [Research](#research) (1)
-- [SEO](#seo) (1)
+- [SEO](#seo) (2)
 - [Security](#security) (2)
 - [Skills](#skills) (1)
 - [Support](#support) (1)
 - [Team ops](#team-ops) (1)
-- [Ticket ops](#ticket-ops) (2)
+- [Ticket ops](#ticket-ops) (3)
 
 ## Code review
 
@@ -60,7 +60,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | ★ 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
-| [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v2 | 🛡 |
+| [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v3 | 🛡 |
 
 ## Docs & changelogs
 
@@ -75,6 +75,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [shopmetric/ga4-funnel-analyst](ecommerce/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v5 | ★ 🛡 |
 | [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v5 | 🛡 |
+| [launifycorp/product-translator](ecommerce/product-translator.md) | Localises e-shop product records into a new market: titles, descriptions, attributes, categories and slugs. Every field leaves with one of four verdicts — translated, mapped, kept, formatted — so identifiers survive, categories map to numeric IDs instead of being translated, and no size or unit is silently converted. | v1 | 🛡 |
 | [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v5 | 🛡 |
 
 ## Email & outreach
@@ -119,6 +120,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/seo-audit](seo/seo-audit.md) | Technical SEO audit that starts from one URL and works outward, ordered by consequence rather than by ease of checking: resolve, crawlability, indexability, rendering, canonicalisation, on-page, structured data, hreflang, speed. Every threshold is quoted from Google or the sitemaps protocol, or labelled as the skill's own judgment. | v1 | 🛡 |
 | [rankcraft/seo-brief-builder](seo/seo-brief-builder.md) | Builds content briefs from a keyword — search intent, outline, entities to cover, and the questions the top ten never answer. | v3 | 🛡 |
 
 ## Security
@@ -150,6 +152,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/jira-sprint-summary](ticket-ops/jira-sprint-summary.md) | The outward-facing report after a sprint closes: a verdict against the sprint goal, committed versus delivered, blockers with a measured duration and a named dependency, hours grouped by work area with coverage stated first, and at most three improvements that each cite a number. Never per person. | v1 | 🛡 |
 | [opsmith/jira-ticket-scorer](ticket-ops/jira-ticket-scorer.md) | Scores every Jira ticket for clarity, scope and effort before it hits the sprint. Flags vague acceptance criteria and suggests a rewrite. | v5 | ★ 🛡 |
 | [opsmith/sprint-retro-facilitator](ticket-ops/sprint-retro-facilitator.md) | Prepares a retrospective from the sprint's data — what shipped, what slipped, where time went — and turns it into three concrete questions for the team. | v3 | 🛡 |
 
