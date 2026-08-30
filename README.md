@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 35 skills · updated 2026-08-30.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 37 skills · updated 2026-08-30.
 
 ## Categories
 
@@ -10,7 +10,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
 - [Design](#design) (1)
-- [Development](#development) (4)
+- [Development](#development) (5)
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (4)
 - [Email & outreach](#email-outreach) (2)
@@ -19,7 +19,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Hiring](#hiring) (1)
 - [Product](#product) (1)
 - [Research](#research) (1)
-- [SEO](#seo) (2)
+- [SEO](#seo) (3)
 - [Security](#security) (2)
 - [Skills](#skills) (1)
 - [Support](#support) (1)
@@ -61,6 +61,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | ★ 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
 | [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v3 | 🛡 |
+| [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
 
 ## Docs & changelogs
 
@@ -120,6 +121,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/geo-audit](seo/geo-audit.md) | Generative engine optimisation audit from one URL: which AI crawlers are permitted and what each operator says that means, what a non-rendering fetch actually receives, whether any passage is self-contained enough to be lifted, and whether anything on the page could only have come from there. Reports configuration, never a visibility score, because none exists. | v1 |  |
 | [launifycorp/seo-audit](seo/seo-audit.md) | Technical SEO audit that starts from one URL and works outward, ordered by consequence rather than by ease of checking: resolve, crawlability, indexability, rendering, canonicalisation, on-page, structured data, hreflang, speed. Every threshold is quoted from Google or the sitemaps protocol, or labelled as the skill's own judgment. | v1 | 🛡 |
 | [rankcraft/seo-brief-builder](seo/seo-brief-builder.md) | Builds content briefs from a keyword — search intent, outline, entities to cover, and the questions the top ten never answer. | v3 | 🛡 |
 

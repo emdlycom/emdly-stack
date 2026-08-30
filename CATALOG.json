@@ -1,6 +1,6 @@
 {
-    "generated": "2026-08-30T20:00:05+00:00",
-    "count": 35,
+    "generated": "2026-08-30T21:00:05+00:00",
+    "count": 37,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -258,6 +258,21 @@
             "raw": "https://emdly.com/raw/launifycorp/linux-web-server-triage.md"
         },
         {
+            "id": "launifycorp/n8n-api",
+            "name": "n8n-api",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/n8n-api.md",
+            "description": "Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority.",
+            "version": "v2",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/n8n-api",
+            "raw": "https://emdly.com/raw/launifycorp/n8n-api.md"
+        },
+        {
             "id": "shopmetric/ga4-funnel-analyst",
             "name": "ga4-funnel-analyst",
             "category": "Ecommerce",
@@ -406,6 +421,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/deckhand/prd-sharpener",
             "raw": "https://emdly.com/raw/deckhand/prd-sharpener.md"
+        },
+        {
+            "id": "launifycorp/geo-audit",
+            "name": "geo-audit",
+            "category": "SEO",
+            "category_slug": "seo",
+            "path": "seo/geo-audit.md",
+            "description": "Generative engine optimisation audit from one URL: which AI crawlers are permitted and what each operator says that means, what a non-rendering fetch actually receives, whether any passage is self-contained enough to be lifted, and whether anything on the page could only have come from there. Reports configuration, never a visibility score, because none exists.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": false,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/geo-audit",
+            "raw": "https://emdly.com/raw/launifycorp/geo-audit.md"
         },
         {
             "id": "launifycorp/seo-audit",
