@@ -9,6 +9,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Code review](#code-review) (2)
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
+- [Design](#design) (1)
 - [Development](#development) (3)
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (3)
@@ -24,7 +25,6 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Support](#support) (1)
 - [Team ops](#team-ops) (1)
 - [Ticket ops](#ticket-ops) (2)
-- [design](#design) (1)
 
 ## Code review
 
@@ -44,8 +44,14 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
-| [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v3 | 🛡 |
-| [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v4 | ★ 🛡 |
+| [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
+| [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v5 | ★ 🛡 |
+
+## Design
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/design-review](design/design-review.md) | A design review is not a list of everything wrong with a page. Anyone can produce forty observations. The work is deciding which three matter, and showing why. This skill is built around that: evidenc... | v1 | ★ 🛡 |
 
 ## Development
 
@@ -66,9 +72,9 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
-| [shopmetric/ga4-funnel-analyst](ecommerce/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v4 | ★ 🛡 |
-| [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v4 | 🛡 |
-| [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v4 | 🛡 |
+| [shopmetric/ga4-funnel-analyst](ecommerce/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v5 | ★ 🛡 |
+| [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v5 | 🛡 |
+| [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v5 | 🛡 |
 
 ## Email & outreach
 
@@ -81,7 +87,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
-| [ledgerline/burn-rate-analyst](finance/burn-rate-analyst.md) | Reads a monthly P&L export and reports runway, burn trends and the three line items moving fastest — with the math shown. | v3 | 🛡 |
+| [ledgerline/burn-rate-analyst](finance/burn-rate-analyst.md) | Reads a monthly P&L export and reports runway, burn trends and the three line items moving fastest — with the math shown. | v4 | 🛡 |
 
 ## Game development
 
@@ -100,7 +106,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
-| [deckhand/prd-sharpener](product/prd-sharpener.md) | Turns a draft PRD into one a team can build from — problem before solution, success metric with a number, explicit non-goals, and open questions with owners. | v3 | 🛡 |
+| [deckhand/prd-sharpener](product/prd-sharpener.md) | Turns a draft PRD into one a team can build from — problem before solution, success metric with a number, explicit non-goals, and open questions with owners. | v4 | 🛡 |
 
 ## Research
 
@@ -118,7 +124,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
-| [nullptr/dependency-cve-triage](security/dependency-cve-triage.md) | Triages a vulnerability report (Dependabot, npm audit, composer audit) — reachable or not, exploitable in this app or not, and what to do this week versus later. | v3 | 🛡 |
+| [nullptr/dependency-cve-triage](security/dependency-cve-triage.md) | Triages a vulnerability report (Dependabot, npm audit, composer audit) — reachable or not, exploitable in this app or not, and what to do this week versus later. | v4 | 🛡 |
 | [nullptr/threat-model-sketch](security/threat-model-sketch.md) | Sketches a threat model for a feature from its description and data flow — assets, entry points, top threats by STRIDE, and the mitigation that exists or is missing. | v4 | 🛡 |
 
 ## Skills
@@ -145,11 +151,5 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [opsmith/jira-ticket-scorer](ticket-ops/jira-ticket-scorer.md) | Scores every Jira ticket for clarity, scope and effort before it hits the sprint. Flags vague acceptance criteria and suggests a rewrite. | v5 | ★ 🛡 |
 | [opsmith/sprint-retro-facilitator](ticket-ops/sprint-retro-facilitator.md) | Prepares a retrospective from the sprint's data — what shipped, what slipped, where time went — and turns it into three concrete questions for the team. | v3 | 🛡 |
-
-## design
-
-| skill | description | version | |
-|---|---|---|---|
-| [launifycorp/design-review](design/design-review.md) | A design review is not a list of everything wrong with a page. Anyone can produce forty observations. The work is deciding which three matter, and showing why. This skill is built around that: evidenc... | v1 | ★ 🛡 |
 
 ★ Emdly recommended · 🛡 Security checked (automated checks + clean AI safety scan + human review)

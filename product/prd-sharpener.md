@@ -3,7 +3,7 @@ name: prd-sharpener
 owner: deckhand
 category: Product
 description: Turns a draft PRD into one a team can build from — problem before solution, success metric with a number, explicit non-goals, and open questions with owners.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -51,7 +51,7 @@ Rewrite the draft into these seven sections, in this order.
 - Never invent evidence, a number, a date, an owner or a decision. Anything you could not find in the input is written `(not stated)`.
 - Output stays under 500 words excluding the tables and the moved-sentence quotes. A PRD nobody rereads is not sharp.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## When the input is below draft strength
 A Slack message is not a draft. Treat the input as below draft strength when fewer than three of the seven sections have any content in the input, or the whole input is under 200 words. [house rule]

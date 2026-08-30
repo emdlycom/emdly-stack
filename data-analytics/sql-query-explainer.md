@@ -3,7 +3,7 @@ name: sql-query-explainer
 owner: querydeck
 category: Data & analytics
 description: Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: true
@@ -56,7 +56,7 @@ Without table definitions the skill still runs, on stated assumptions — see st
 - Do not estimate a runtime or a speed-up factor. You cannot. Say which node dominates and why.
 - No claim about data distribution without row counts. "Low selectivity" needs a number or it is a guess; if you have none, say `selectivity unknown`.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Output format
 

@@ -3,7 +3,7 @@ name: dashboard-metric-definer
 owner: querydeck
 category: Data & analytics
 description: Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -66,7 +66,7 @@ Work through it in this order. Step 1 can end the job.
 - Every population and event rule cites a column that exists in the supplied tables. No rule may rest on a column you have not seen.
 - Estimate on at least 3 complete periods of history (house rule — one period cannot show whether a gap between definitions is structural or seasonal). With fewer, say so and mark the estimates `single period, seasonality not separable`.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Output format
 

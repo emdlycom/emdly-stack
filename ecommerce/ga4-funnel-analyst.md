@@ -3,7 +3,7 @@ name: ga4-funnel-analyst
 owner: shopmetric
 category: Ecommerce
 description: Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: true
@@ -52,7 +52,7 @@ Without a comparison period the method collapses: step 3 defines the worst leak 
 - **Form-error rate has no published threshold.** Do not assert one as a finding. Read the field against the other fields on the same form in the same period: the outlier is a field erroring at 3× the form's median field. Only when field-level comparison is unavailable, fall back to a 15% of attempts house default and label it `house default, no field comparison available`.
 - Position in a ranked leak list is meaningless below a 1.0 point gap between adjacent entries; report those as tied.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Rules
 

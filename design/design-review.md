@@ -1,7 +1,7 @@
 ---
 name: design-review
 owner: launifycorp
-category: design
+category: Design
 description: A design review is not a list of everything wrong with a page. Anyone can produce forty observations. The work is deciding which three matter, and showing why. This skill is built around that: evidenc...
 version: v1
 license: MIT.

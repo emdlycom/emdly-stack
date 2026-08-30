@@ -3,7 +3,7 @@ name: search-console-auditor
 owner: shopmetric
 category: Ecommerce
 description: Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -48,7 +48,7 @@ Without weekly rows, list 3 cannot run — the swap test is the whole method and
 
 ## Where the thresholds come from
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 - **20% and 50 clicks together.** Clicks over a fixed window behave roughly as counts, so the noise band scales with the square root. The pair only admits a page whose baseline is at least 250 clicks (20% of 250 = 50). At 250 clicks the 95% Poisson band is ±31 clicks; a 50-click fall is 1.6× that. Either condition alone lets noise in — 20% of 40 clicks is 8 clicks, which is nothing. [judgment, anchored on the Poisson band at n=250]
 - **1 000 impressions.** At 1 000 impressions and a 4.8% band CTR, the 95% band on the observed CTR is about ±1.3 points. "Under half the band average" is a 2.4-point gap, comfortably outside it. Below 1 000 impressions that stops being true. [judgment, anchored on the binomial band at n=1 000]

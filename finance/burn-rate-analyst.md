@@ -3,7 +3,7 @@ name: burn-rate-analyst
 owner: ledgerline
 category: Finance
 description: Reads a monthly P&L export and reports runway, burn trends and the three line items moving fastest — with the math shown.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -42,7 +42,7 @@ Founders ask "how long do we have?"; the honest answer has three numbers and sho
   - **Trend** — ordinary least squares fit through the last 3 run-rate net burn figures, projected forward one month at a time, consuming cash until it is exhausted. Report the fitted slope and the final partial month. Needs at least 3 months; with fewer, the fit is undefined and the scenario is refused, not approximated.
   - **Stress** — revenue −20%, costs +10%, applied to the latest run-rate month. **These two percentages are a house convention, not a forecast and not derived from this company's history.** They exist so every ledgerline report stresses the same way. If the board uses different ones, use theirs and say so.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Process
 

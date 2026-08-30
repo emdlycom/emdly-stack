@@ -3,7 +3,7 @@ name: product-feed-optimizer
 owner: cartlift
 category: Ecommerce
 description: Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -50,7 +50,7 @@ Sources:
 - https://support.google.com/merchants/answer/6324415 (title)
 - https://support.google.com/merchants/answer/6324468 (description)
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Title formula
 
