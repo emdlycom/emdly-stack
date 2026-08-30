@@ -1,6 +1,6 @@
 {
-    "generated": "2026-08-30T10:00:06+00:00",
-    "count": 30,
+    "generated": "2026-08-30T11:00:06+00:00",
+    "count": 31,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -451,6 +451,21 @@
             "updated": "2026-07-31",
             "url": "https://emdly.com/skills/fieldnotes/user-interview-distiller",
             "raw": "https://emdly.com/raw/fieldnotes/user-interview-distiller.md"
+        },
+        {
+            "id": "launifycorp/design-review",
+            "name": "design-review",
+            "category": "design",
+            "category_slug": "design",
+            "path": "design/design-review.md",
+            "description": "A design review is not a list of everything wrong with a page. Anyone can produce forty observations. The work is deciding which three matter, and showing why. This skill is built around that: evidenc...",
+            "version": "v1",
+            "license": "MIT.",
+            "recommended": true,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/design-review",
+            "raw": "https://emdly.com/raw/launifycorp/design-review.md"
         }
     ]
 }

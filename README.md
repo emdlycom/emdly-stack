@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 30 skills · updated 2026-08-30.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 31 skills · updated 2026-08-30.
 
 ## Categories
 
@@ -23,6 +23,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Skills](#skills) (1)
 - [Support](#support) (1)
 - [Ticket ops](#ticket-ops) (3)
+- [design](#design) (1)
 
 ## Code review
 
@@ -138,5 +139,11 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [opsmith/jira-ticket-scorer](ticket-ops/jira-ticket-scorer.md) | Scores every Jira ticket for clarity, scope and effort before it hits the sprint. Flags vague acceptance criteria and suggests a rewrite. | v3 | ★ 🛡 |
 | [opsmith/sprint-retro-facilitator](ticket-ops/sprint-retro-facilitator.md) | Prepares a retrospective from the sprint's data — what shipped, what slipped, where time went — and turns it into three concrete questions for the team. | v2 | 🛡 |
 | [opsmith/standup-synthesizer](ticket-ops/standup-synthesizer.md) | Reads yesterday's commits, tickets and threads, and writes each person's standup draft — blockers first, no ceremony. | v3 | 🛡 |
+
+## design
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/design-review](design/design-review.md) | A design review is not a list of everything wrong with a page. Anyone can produce forty observations. The work is deciding which three matter, and showing why. This skill is built around that: evidenc... | v1 | ★ 🛡 |
 
 ★ Emdly recommended · 🛡 Security checked (automated checks + clean AI safety scan + human review)
