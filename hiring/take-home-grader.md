@@ -3,7 +3,7 @@ name: take-home-grader
 owner: talentloop
 category: Hiring
 description: Grades take-home submissions against a rubric you define, blind to names, and writes feedback the candidate can actually use.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -49,6 +49,8 @@ Supply all four. The skill declines without the first three.
 - Time spent is context. If the rubric does not name it, it appears only in panel notes.
 - Never infer intent. "The candidate probably meant" is not evidence.
 - The candidate feedback is a draft for a human to send, not a message you send.
+
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Output format
 

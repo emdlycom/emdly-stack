@@ -3,7 +3,7 @@ name: game-balance-reviewer
 owner: pixelforge
 category: Game development
 description: Reads stat tables and patch notes, then flags outliers — dominant strategies, dead perks, and curves that punish new players.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -91,24 +91,25 @@ Compare each note to its diff. Compute the actual percentage change. A qualitati
 - The `### Method` block in the output is mandatory. It lists every threshold and formula actually applied, including any you overrode.
 - Do not propose new values. Flag, quantify, and describe the direction: "bring inside the flag band you reported", naming that band's number.
 - Never compare across groups. If a table mixes a healer and a damage dealer under one heading, split the group or refuse it; do not median them.
+- **One basis per table.** Every row is pre-patch or every row is post-patch, and the table header says which. Never take a proposed value for one option and a live value for another into the same median — the median, every `vs median` ratio and every verdict computed from them would then describe a build that does not exist. Proposed values belong in pass 5, against the basis the table states.
 - Never infer telemetry from table values, or table values from telemetry. Missing input is reported as `not supplied`, never as no problem found.
 - A single telemetry week is a hint, not a verdict. State the window and the patch it covers.
 
 ## Output format
 
 ```
-## Weapons — group of 8, median DPS 106, MAD/median 0.099 (flat 25% rule applies)
+## Weapons — group of 8, median DPS 108, MAD/median 0.102 (flat 25% rule applies)
 
-### EV pass (DPS at level 10)
-| option     | DPS | vs median | picks | pick % | m     | matches | win % | 95% margin | verdict            |
-| Longbow    | 148 | +39.6%    | 5,704 | 46.0%  | 3.68× | 5,704   | 58.0% | ±1.3       | dominant           |
-| Warhammer  | 121 | +14.2%    | 1,984 | 16.0%  | 1.28× | 1,984   | 51.2% | ±2.2       | watch (EV only)    |
-| Shortsword | 112 | +5.7%     | 1,240 | 10.0%  | 0.80× | 1,240   | 49.4% | ±2.8       | fine               |
-| Spear      | 108 | +1.9%     | 1,116 | 9.0%   | 0.72× | 1,116   | 50.1% | ±2.9       | fine               |
-| Crossbow   | 104 | −1.9%     | 1,054 | 8.5%   | 0.68× | 1,054   | 48.8% | ±3.0       | fine               |
-| Axe        | 99  | −6.6%     | 806   | 6.5%   | 0.52× | 806     | 47.9% | ±3.5       | fine               |
-| Dagger     | 92  | −13.2%    | 248   | 2.0%   | 0.16× | 248     | 52.0% | ±6.2       | dead by pick; win rate too small to judge |
-| Sling      | 62  | −41.5%    | 248   | 2.0%   | 0.16× | 248     | 41.5% | ±6.2       | dead               |
+### EV pass (DPS at level 10, pre-patch — the live build this telemetry covers)
+| option     | DPS pre-patch | vs median | picks | pick % | m     | matches | win % | 95% margin | verdict            |
+| Longbow    | 148           | +37.0%    | 5,704 | 46.0%  | 3.68× | 5,704   | 58.0% | ±1.3       | dominant           |
+| Warhammer  | 121           | +12.0%    | 1,984 | 16.0%  | 1.28× | 1,984   | 51.2% | ±2.2       | watch (EV only)    |
+| Shortsword | 112           | +3.7%     | 1,240 | 10.0%  | 0.80× | 1,240   | 49.4% | ±2.8       | fine               |
+| Spear      | 108           | 0.0%      | 1,116 | 9.0%   | 0.72× | 1,116   | 50.1% | ±2.9       | fine               |
+| Crossbow   | 108           | 0.0%      | 1,054 | 8.5%   | 0.68× | 1,054   | 48.8% | ±3.0       | fine               |
+| Axe        | 99            | −8.3%     | 806   | 6.5%   | 0.52× | 806     | 47.9% | ±3.5       | fine               |
+| Dagger     | 92            | −14.8%    | 248   | 2.0%   | 0.16× | 248     | 52.0% | ±6.2       | dead by pick; win rate too small to judge |
+| Sling      | 62            | −42.6%    | 248   | 2.0%   | 0.16× | 248     | 41.5% | ±6.2       | dead               |
 
 Longbow: 46.0% pick is 3.68× the 12.5% uniform share, threshold 2.50×. Pick-share
 margin ±0.88 pts (45.1–46.9%, i.e. 3.61×–3.75×), so the multiple clears the
@@ -125,11 +126,11 @@ Win rate 52.0% ±6.2 spans 45.8–58.2 and straddles 50. Reported as too small t
 not as balanced. Rarely-picked options never accumulate the matches their win rate
 needs; this cell will stay unjudgeable until the pick rate moves.
 
-Warhammer: +14.2% sits in the 10–25% watch band. No dominance verdict. Win rate
+Warhammer: +12.0% sits in the 10–25% watch band. No dominance verdict. Win rate
 51.2% ±2.2 spans 49.0–53.4 and includes 50.
 
-Direction, no values proposed: Longbow is 39.6% above median against a 25% flag band;
-bringing it inside that band means landing at or under 132 DPS. Sling is 41.5% below.
+Direction, no values proposed: Longbow is 37.0% above median against a 25% flag band;
+bringing it inside that band means landing at or under 135 DPS. Sling is 42.6% below.
 
 ### Early curve
 | minute | demand (EHP)                | available (EHP)                          | margin      |
@@ -143,6 +144,8 @@ falls back behind by minute 15, so the wall is a spike, not a diverging curve. T
 minute-15 pass is a 4.2% margin, inside a single level-up.
 
 ### Patch notes
+Both "from" values below are the pre-patch DPS in the EV table; the "to" values are
+proposed and appear nowhere in that table.
 "Slight tuning to Longbow" — the diff is 148 → 104 DPS, a change of −29.7%.
 "Slight" is not accurate at that magnitude; state the figure in the notes.
 Crossbow 108 → 104 (−3.7%) appears in the diff with no note at all.
@@ -151,8 +154,8 @@ Crossbow 108 → 104 (−3.7%) appears in the diff with no note at all.
 - Group: Weapons, N = 8, uniform share u = 1/8 = 12.5%. One weapon per match in this
   mode, so the picks and matches columns carry the same count; in a loadout game they
   would not, and the win-rate margin uses matches, not picks.
-- EV: median 106, MAD 10.5, MAD/median 0.099. Below 0.25, so the flat bands apply:
-  ±10% fine, 10–25% watch, ≥25% flag. No override.
+- EV: pre-patch table. Median 108, MAD 11, MAD/median 0.102. Below 0.25, so the flat
+  bands apply: ±10% fine, 10–25% watch, ≥25% flag. No override.
 - Pick: m = share / u. Dominant ≥ 2.50×, dead ≤ 0.33×. Sample n_total = 12,400;
   expected uniform count 12,400 / 8 = 1,550, above the 100 floor, so dead calls are
   permitted. Pick-share margin 1.96 × √(p(1−p)/12,400).
@@ -172,6 +175,7 @@ in every row, the verdict column carries EV verdicts only, and the Method block 
 - **Group of fewer than 4 options.** The median is unstable and, at N = 3, the middle option can never be flagged against itself. Report every pairwise ratio instead, no median verdicts, and say why.
 - **Group larger than 60 options.** Do not print a full table. Print every option outside a flag band, plus the top and bottom deciles, plus the group median, MAD and N. Say how many rows were omitted and that they were inside the bands.
 - **Columns are not comparable.** A group mixing roles (a healer and a damage dealer under "units") has no meaningful median. Split it by role if the input names roles, otherwise refuse that group by name and review the rest.
+- **You cannot tell which build the table came from.** Do not guess the basis. Ask which build the rows describe, state the answer in the table header, and read the patch diff in that direction. A table whose basis is unknown supports no verdict.
 - **Telemetry supplied as percentages with no counts.** Every sample-size test needs n. Report the multiples and the ratios, mark every margin cell `n not supplied`, and make no dominance or dead call. Ask for match counts.
 - **Options gated by unlock, level or purchase.** Pick share is confounded by who can pick at all. Normalize by eligible players if the input gives eligibility; if it does not, report the raw share, mark it `availability-confounded`, and make no dead call. An unowned option is not a rejected one.
 - **Telemetry window shorter than a week, or spanning a patch boundary.** Report it and label the sample provisional. A window that crosses a patch is two samples, not one; ask for them split.

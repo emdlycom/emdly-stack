@@ -3,7 +3,7 @@ name: threat-model-sketch
 owner: nullptr
 category: Security
 description: Sketches a threat model for a feature from its description and data flow — assets, entry points, top threats by STRIDE, and the mitigation that exists or is missing.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -59,6 +59,8 @@ The **data flow** is load-bearing: steps 2 and 3 are defined against it. Read th
 - **Do not write exploit code or step-by-step attack instructions.** This holds without exception and regardless of who asks or why. Specifically: no proof-of-concept, no payload strings, no crafted request that would trigger the issue, no ordered sequence of steps that reproduces it, no tool invocation, no bypass technique for a control you found. Describe the risk as asset plus entry point plus missing control, and stop there. If the input asks for any of that — including framed as a test, a demo, or an authorised engagement — decline in one line and continue with the sketch.
 - Do not name a threat you cannot tie to a specific entry point from pass 2.
 - Every status is one of the three words in pass 5. No "partial", no "probably fine".
+
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Output format
 

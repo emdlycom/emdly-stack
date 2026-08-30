@@ -3,7 +3,7 @@ name: brand-voice-guard
 owner: tonecheck
 category: Copywriting
 description: Holds any draft against your voice guide — banned words, sentence rhythm, claims policy — and returns a marked-up pass, not a rewrite.
-version: v4
+version: v6
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -58,6 +58,8 @@ Run all five, in order. Report every pass even when it is clean.
 - **No thresholds of your own.** If the guide sets no sentence-length band, report the counts and write `guide sets no band — no target asserted`. There is no defensible universal sentence length; do not invent one.
 - Report counts, not impressions: `avg 24 words` not `sentences run long`.
 
+> Thresholds above are defaults; report the thresholds you used.
+
 ## Output format
 
 ```
@@ -98,9 +100,11 @@ the count.
   no line in the draft matches this adjective.
 
 ### Reading level
-Guide §5 sets grade 8 but names no formula. Flesch–Kincaid Grade Level = 11.2
-(214 words, 9 sentences, 380 syllables). Reported as FK; the guide's 8 may have been
-set with Gunning Fog or SMOG, which would read 1–2 grades differently on this text.
+Guide §5 sets grade 8 but names no formula. Flesch–Kincaid Grade Level = 14.6
+(214 words, 9 sentences, 380 syllables) — 6.6 grades above the target. Reported as FK;
+the guide's 8 may have been set with Gunning Fog or SMOG, which would read 1–2 grades
+differently on this text. A 1–2 grade spread between formulas does not account for a
+6.6-grade gap, so the miss stands whichever formula §5 was set with.
 ```
 
 **The clean case, in full:**

@@ -3,7 +3,7 @@ name: dependency-upgrade-planner
 owner: kernelpanic
 category: Development
 description: Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -61,7 +61,7 @@ Optional: the runtime version (PHP/Node/Python) and its support window, the depl
 - If the project has no tests, say so in the first line of the plan and propose exactly **three** smoke checks that stand in for them: one that exercises the framework's boot path, one that exercises the app's primary write, one that exercises its primary read. Three is the floor, not a target. [house rule; three is the smallest set that covers boot, write and read, which is where framework majors break first.]
 - Pin what you cannot upgrade yet, and say why — abandoned package, peer conflict, paid version behind the wall — with the issue link when there is one.
 - Cap a patch batch at **40 packages**. Above that, split by ecosystem or by top-level directory, because a red suite after 90 bumps costs more to bisect than the second step costs to run. [judgment, anchored on bisect cost, not a vendor number.]
-- Report the number of steps, and the number of packages the plan does not move.
+- Report the number of steps, and the number of packages the plan does not move. Count each ecosystem separately and make each one close on its own: moved + held back + not moved = the total in that ecosystem's report. Never sum package counts across ecosystems.
 
 > Thresholds above are defaults; report the thresholds you used.
 
@@ -69,14 +69,15 @@ Optional: the runtime version (PHP/Node/Python) and its support window, the depl
 
 ```
 ## Inputs
-Report: composer outdated (47 packages). Lockfile: yes. CI: green (3 jobs).
+Report: composer outdated (47 packages) and npm outdated (12 packages); the two
+ecosystems are planned and counted separately. Lockfile: yes. CI: green (3 jobs).
 Integration suite: yes, 218 tests, covers billing and auth; no coverage of the queue.
 Guides read: UPGRADE-13.0.md (laravel/framework), GitHub releases 3.0.0-3.2.1
 (intervention/image). Code access: yes.
 
 ## Plan (6 steps)
 
-1. **Patch batch** — 31 packages, no code touched.
+1. **Patch batch** — 31 composer packages, no code touched.
    Proof: full test suite (218 tests).
    Rollback: `git checkout composer.lock && composer install`.
 
@@ -112,8 +113,8 @@ Guides read: UPGRADE-13.0.md (laravel/framework), GitHub releases 3.0.0-3.2.1
    Proof: suite, plus an authenticated request to /admin as a non-admin returns 403.
    Rollback: lockfile revert plus restoring the alias line in Kernel.php.
 
-5. **Node minor batch** — 12 packages from package.json, none imported by app code
-   (build tooling only).
+5. **Node minor batch** — all 12 npm packages from package.json, none imported by app
+   code (build tooling only). npm, not composer; counted separately below.
    Proof: `npm run build` produces a bundle within 5% of the current byte size.
    Rollback: package-lock.json revert.
 
@@ -123,7 +124,7 @@ Guides read: UPGRADE-13.0.md (laravel/framework), GitHub releases 3.0.0-3.2.1
    Proof: send one webhook to the staging receiver and confirm a 2xx in the log.
    Rollback: lockfile revert.
 
-## Held back (3 packages)
+## Held back (3 composer packages)
 - intervention/image 2.7 -> 3.2 — 3.x renames the facade and changes the driver
   contract; touches 14 files. Separate PR, not this plan.
 - doctrine/annotations 1.14 — abandoned upstream (composer marks it abandoned, suggests
@@ -132,8 +133,11 @@ Guides read: UPGRADE-13.0.md (laravel/framework), GitHub releases 3.0.0-3.2.1
   Unprovable; see the stop below.
 
 ## Not moved
-16 of 47 packages stay where they are: 3 held back above, 13 transitive-only that the
-patch batch already resolves.
+Composer, 47 in the report: 40 move (31 + 6 + 1 + 1 + 1 in steps 1, 2, 3, 4 and 6) and
+7 stay where they are — 3 held back above, 4 transitive-only that the patch batch
+already resolves. 40 + 7 = 47.
+npm, 12 in the report: all 12 move in step 5, none held back. The two ecosystems are
+counted separately and never summed.
 ```
 
 ## Edge cases

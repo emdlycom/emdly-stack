@@ -3,7 +3,7 @@ name: search-console-auditor
 owner: shopmetric
 category: Ecommerce
 description: Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -146,6 +146,43 @@ Two options, and neither is done silently:
 - **A band with under 1 000 impressions site-wide.** It has no usable average. Skip its queries in list 2 and say which band was skipped.
 - **A migration or template change inside a period.** State it at the top. Every row is then a candidate for that cause, and the report says so rather than diagnosing page by page.
 - **Search Console anonymised queries.** The export drops low-volume queries entirely, so page-level clicks will exceed the sum of their queries. Do not reconcile the two; note the gap and use page-level figures for list 1.
+
+## Stop and hand back
+
+This skill produces three lists. It does not edit a page, and nothing in its output ships
+on its own authority. Stop means: hand the list, the counts and the evidence to the named
+owner and let them decide. Each of these halts the audit for that row.
+
+- **Any edit to a live page** — a `<title>`, a meta description, a heading, an internal
+  link, a template. List 2 exists to say which titles do not match intent; it does not
+  rewrite them. A title is customer-facing copy that reaches every searcher with no further
+  review, and a bad rewrite costs clicks that will not show up in an export for four weeks.
+  Hand the rows to whoever owns the page content or the template.
+- **Any consolidation, redirect, canonical or `noindex` arising from list 3.** The list
+  names a winner; acting on it means demoting or removing a URL that currently earns
+  clicks, and that is not reversible on the same timescale — recovery after a redirect runs
+  in weeks, not days. Hand both URLs, both impression shares, the swap evidence and the
+  named winner to whoever owns the site's URL structure. Do not write the redirect rule.
+- **A URL in the export that should not be indexed** — a staging host, an internal tool, a
+  customer-specific page, a checkout or account URL, anything that should sit behind auth.
+  That is an exposure, not a ranking finding. Drop the row from the lists, report it to
+  whoever owns the site the same day, and say plainly that it is out of this skill's scope.
+- **A losing page that is a pricing, legal, or regulated-claims page** — terms, refunds,
+  shipping promises, an advertised price, a medical or financial claim. A title or
+  description rewrite there changes a published claim. Report the row and route it to
+  whoever signs those off. Do not propose replacement wording.
+- **A request to lower the thresholds to fill an empty list.** Do not lower them yourself.
+  Report the three zeros with their near-misses, present the two options from the small-site
+  example, and let the person who asked pick one and own it. Whichever they pick, the
+  report states the thresholds actually used.
+- **A request to attribute a movement to an algorithm update, or to rank this site against a
+  competitor or a published CTR-by-position curve.** The export supports none of the three.
+  Say so, say what data would (a rank tracker with a dated index, a competitor's own
+  Console), and produce nothing on the current data.
+- **A migration, template change or index change inside either period.** Every row is then a
+  candidate for that cause, and page-by-page diagnosis is guesswork. State it at the top,
+  hand the affected rows to whoever ran the change to rule it out, and do not let anyone
+  rewrite a page off this report until they have.
 
 ## License
 MIT

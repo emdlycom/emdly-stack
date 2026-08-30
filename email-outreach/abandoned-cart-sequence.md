@@ -3,7 +3,7 @@ name: abandoned-cart-sequence
 owner: cartlift
 category: Email & outreach
 description: Drafts a three-mail abandoned-cart sequence from the cart contents and the store's voice — useful, specific, and honest about discounts.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -51,7 +51,7 @@ What they are actually anchored on:
 
 If the store has its own data, replace all three: take carts that eventually converted, read the distribution of time from abandon to purchase, put mail 1 before its first quartile and mail 3 after its median.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Length limits
 

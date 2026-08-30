@@ -3,7 +3,7 @@ name: commit-message-editor
 owner: kernelpanic
 category: Code review
 description: Rewrites a commit message from the diff — imperative subject under 72 characters, a body that explains why, and a footer that links the issue.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -45,6 +45,8 @@ If the last 20 subjects are unavailable, say so and use the repo default: a plai
 - **Never mention the tool that wrote the message.** No `Co-authored-by` for an agent, no "generated", no trailer naming a model.
 - **Never assert a fact the diff does not carry.** No benchmark numbers, no "fixes the flaky test", no "as discussed" unless the input contains it. Where you need a fact you do not have, write the sentence with a `TODO:` and hand it back rather than inventing.
 - Banned in subjects: "various", "misc", "updates", "cleanup", "fixes stuff", "wip", "minor changes". Each names nothing.
+
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Splitting
 Propose a split when any of these is true:

@@ -3,7 +3,7 @@ name: jira-ticket-scorer
 owner: opsmith
 category: Ticket ops
 description: Scores every Jira ticket for clarity, scope and effort before it hits the sprint. Flags vague acceptance criteria and suggests a rewrite.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: true
@@ -85,42 +85,37 @@ These are conventions this skill applies, not findings read out of the ticket. S
 
 ## Output format
 
-A ticket that scores low enough to bounce:
+A ticket that scores low enough to bounce. This one carries three flags, and the full
+result runs past 200 words, so it drops to the two most severe and says so — the whole
+block below is 198 words:
 
 ```
 ## PROJ-1184 — "Fix the export"  (Bug)
 
 ## Result
-- **Clarity:** 2 — no reproduction steps [house rule: missing repro caps Clarity at 2].
-  "it breaks for some users sometimes" is the only symptom given.
-- **Scope:** 2 — contains a migration ("add a status column") and a UI change
-  ("and grey out the button"), different owners, can ship separately.
+- **Clarity:** 2 — no repro steps [house rule: caps Clarity at 2].
+  "it breaks for some users sometimes" is the only symptom.
+- **Scope:** 2 — a migration ("add a status column") and a UI change ("and grey out
+  the button"); different owners.
 - **Effort signal:** 3 — the export job is identifiable from the title; no component,
-  no row count, no dependency named.
-- **Flags:** "as before" refers to behaviour described nowhere in the ticket or its
-  comments; linked PROJ-812 is closed; the repro may be in export-error.png, which
-  cannot be read.
+  row count or dependency named.
+- **Flags:** the repro may be in export-error.png, unreadable here; "as before" is
+  defined nowhere in the ticket. (2 of 3 flags shown)
 - **Route:** back to reporter — two scores at or below 2 [house rule].
 
-## Suggested rewrite (reporter's wording kept; proposed criteria labelled)
-Title: CSV export returns an empty file for accounts with more than 5,000 rows
+## Suggested rewrite (reporter's wording kept)
+Title: CSV export returns an empty file for accounts over 5,000 rows
 
-The export runs and downloads, but the file has only the header row. Seen by
-two users on 14 Aug, both on accounts over 5,000 rows. Smaller accounts export fine.
-
+Two users on 14 Aug, both on accounts over 5,000 rows; smaller accounts export fine.
 Steps: open Reports > Export, choose "All time", click Export.
-Expected: a CSV with one row per record.
-Actual: a CSV with the header row only, 41 bytes.
+Expected: one row per record. Actual: the header row only, 41 bytes.
+Out of scope: "grey out the button" — raise separately.
 
-Out of scope: the "grey out the button" change — raise separately.
-
-proposed — acceptance criteria (not in the original, confirm with the reporter):
-- An account with 10,000 records exports 10,000 rows plus a header.
-- An export that fails returns an error, not an empty file.
-
-proposed — unverified: whether "as before" means the pre-July behaviour.
-Reporter to confirm.
+proposed — acceptance criteria: 10,000 records export as 10,000 rows plus a header;
+a failed export returns an error, not an empty file.
 ```
+
+The third flag, withheld by the rule above: linked PROJ-812 is closed.
 
 A ticket that passes, with nothing to rewrite:
 

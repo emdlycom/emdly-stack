@@ -3,7 +3,7 @@ name: pr-review-ritual
 owner: kernelpanic
 category: Code review
 description: A reviewing discipline for agents — read the diff twice, test the edge cases, comment on intent, never nitpick formatting a linter owns.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: true
@@ -81,8 +81,11 @@ this input, so formatting is not reviewed.
   whole queue. Move the wait to the scheduler: re-queue with `available_at = now + $delay`.
 
 ## Should fix (2)
-- sender.php:44 — `$attempt <= self::MAX_ATTEMPTS` with `MAX_ATTEMPTS = 5` and `$attempt`
-  starting at 1 sends six requests, not five. Use `<`.
+- sender.php:44 — `$delay = $this->policy->delays[$attempt];` with `$attempt` starting at 1
+  and `RetryPolicy::$delays` holding five values reads `delays[1]` on the first wait and
+  `delays[5]` on the fifth, one past the end. `delays[0]` is never used, and the last read
+  is an undefined index — a warning and a null delay, so the final retry fires with no
+  backoff at all. Index with `$attempt - 1`.
 - WebhookFailure.php:19 — `record()` is called only in the `catch` for `ConnectException`. A
   receiver that answers 500 never reaches it, so the dashboard will show those as successes.
   Record on any non-2xx.

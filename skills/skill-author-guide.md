@@ -3,7 +3,7 @@ name: skill-author-guide
 owner: promptsmith
 category: Skills
 description: How to write an emdly skill that passes review and actually works in an agent — structure, rules that bind, output contracts, and the mistakes reviewers bounce.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: true
@@ -72,9 +72,11 @@ Three legal forms. There is no fourth, and a bare assertion is the most common r
 2. **Disclaimed.** Tag it `[judgment]` and say what it is anchored on. "Body text ≥ 16px — WCAG sets no minimum; Butterick puts optimal web body at 15-25px, 16 is the low end and the common browser default. [judgment, anchored on Butterick]"
 3. **Refused.** If no defensible number exists, say so and describe the shape to read instead. "Colour count has no threshold. Do not assert one. Read the distribution."
 
-If a number is a house convention rather than a finding, write "house rule" next to it — that is honest and it survives review. If the skill runs on tunable thresholds, add this line verbatim:
+If a number is a house convention rather than a finding, write "house rule" next to it — that is honest and it survives review. If the skill runs on tunable thresholds, add this line verbatim, as a Markdown blockquote:
 
 > Thresholds above are defaults; report the thresholds you used.
+
+**The blockquote is the canonical form.** Copy the line exactly as it appears above, the leading `> ` included. Plain text, bold, italics, a bullet and a heading are all wrong. Reviewers check for the `> `. The worked example at the end of this guide uses the same form, and earlier versions of this file did not — the catalog is split between blockquote and plain text because authors copied whichever of the two they happened to read first. There is one form now, and this is it.
 
 ## The worked example carries the hard cases
 The example is what agents copy. They copy shapes far more reliably than they follow prose, which means an example that shows only the happy path teaches the skill to produce only happy paths.
@@ -145,7 +147,7 @@ image is a link. Alt text cannot be written from a filename alone.
 - Never start with "image of" or "picture of". The screen reader already said it.
 - Never invent detail you cannot see. Write `cannot see image — ask the owner`.
 
-Thresholds above are defaults; report the thresholds you used.
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Output format
 ```
@@ -185,7 +187,7 @@ Halt and name a human before the page ships when:
 MIT
 ````
 
-Every mandated branch appears above: a citation (SC 1.1.1), a `[judgment]` anchor (125 characters), a refusal (no percentage threshold), an empty case (`""` and `—`), a flagged case (`cannot see image — ask the owner`, the literal string the rule named), a decline written out in full, and a stop with three named triggers.
+Every mandated branch appears above: a citation (SC 1.1.1), a `[judgment]` anchor (125 characters), a refusal (no percentage threshold), an empty case (`""` and `—`), a flagged case (`cannot see image — ask the owner`, the literal string the rule named), a decline written out in full, a stop with three named triggers, and the thresholds line in its canonical blockquote form.
 
 ## Edge cases
 - **You have no defensible number for a rule.** Do not round one up. Use form 3: refuse it, and describe the shape the agent should read instead.
@@ -199,6 +201,7 @@ Every mandated branch appears above: a citation (SC 1.1.1), a `[judgment]` ancho
 - [ ] Someone who has never seen my tooling could run this from the file alone.
 - [ ] Every rule carries a number, a named format, a closed list, or a refusal condition.
 - [ ] Every number is cited, `[judgment]`-tagged with its anchor, labelled a house rule, or refused.
+- [ ] If the skill runs on tunable thresholds, the canonical blockquote is present: `> Thresholds above are defaults; report the thresholds you used.`
 - [ ] The example has no elision, and shows the empty, flagged and refused cases.
 - [ ] I recomputed every figure in the example and it ties out.
 - [ ] `## Edge cases` covers absent, malformed, empty, oversized, and missing secondary source.

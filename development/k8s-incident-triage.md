@@ -3,7 +3,7 @@ name: k8s-incident-triage
 owner: sevzero
 category: Development
 description: Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human.
-version: v3
+version: v4
 license: MIT
 updated: 2026-08-30
 recommended: false
@@ -70,6 +70,8 @@ Ranked hypotheses usually start from one of these. Each line is shape → likely
 - Never propose deleting anything as diagnostics.
 - Never propose a mitigation to "see if it helps". A mitigation is proposed only after the hypothesis it treats is confirmed, and only under the `confirm` gate.
 - Redact anything token-shaped from quoted logs before it reaches the output.
+
+> Thresholds above are defaults; report the thresholds you used.
 
 ## Output format
 

@@ -3,7 +3,7 @@ name: playtest-feedback-triage
 owner: pixelforge
 category: Game development
 description: Sorts raw playtest notes into balance, UX, bugs and feel — ranked by how many testers hit it, with repro steps pulled from context.
-version: v4
+version: v5
 license: MIT
 updated: 2026-08-30
 recommended: true
@@ -59,15 +59,15 @@ Closed list. Every observation lands in exactly one.
 - Do not propose design changes. Report the observation, the count and the severity. The designer decides. A tester's own proposed fix is quoted as theirs, never adopted as a recommendation.
 - Mark inferred repro steps `(inferred)`. Never mark a step inferred that the tester actually wrote.
 - Praise is counted and ranked by the same rules as everything else. Do not soften a low count by moving an item into Praise.
-- Report the arithmetic in the header so it reconciles: notes in, unusable, usable, observations after splitting, distinct items after merging.
+- Report the arithmetic in the header so it reconciles: notes in, unusable, usable, observations after splitting, distinct items after merging. All six categories appear in the sum line, including any that are zero, and the sum equals the distinct-item count.
 - Under 5 testers, do not rank. See Edge cases.
 
 ## Output format
 
 ```
 ## Session 12 — build 0.9.4-rc2
-18 testers · 214 notes · 9 unusable · 205 usable → 331 observations → 118 distinct items
-Bug 21 · Balance 34 · UX 29 · Feel 22 · Praise 12 = 118
+18 testers · 214 notes · 9 unusable · 205 usable → 331 observations → 120 distinct items
+Bug 21 · Balance 34 · UX 29 · Feel 22 · Praise 12 · Unresolved 2 = 120
 Every category is printed in full in the delivered file. This excerpt shows the top of
 each; the remaining items follow the same shape, in rank order, to the count in brackets.
 
@@ -120,10 +120,12 @@ notes from eight testers, T08 twice. Those testers still count once on their usa
 
 ### Method
 Merge rule: same object and same failure. Counting unit: distinct testers, n = 18.
+Every share above is out of 18 testers, never out of the item count.
 Classification tiebreak: number → screen → code → nothing broken.
 Ranked by tester count, ties by severity order blocks > loses > degrades > cosmetic.
 Single-report items listed unranked. Notes 214 = 205 usable + 9 unusable;
-205 usable produced 331 observations, merged to 118 distinct items.
+205 usable produced 331 observations, merged to 120 distinct items;
+21 + 34 + 29 + 22 + 12 + 2 = 120.
 ```
 
 Second shape, when the sample is below the ranking floor:
@@ -131,7 +133,7 @@ Second shape, when the sample is below the ranking floor:
 ```
 ## Milestone roll-up — sessions 13–15, builds 0.9.5 through 0.9.7
 4 unique testers · 22 notes · 6 unusable · 16 usable → 24 observations → 16 distinct items
-Bug 3 · Balance 5 · UX 6 · Feel 2 · Praise 0 = 16
+Bug 3 · Balance 5 · UX 6 · Feel 2 · Praise 0 · Unresolved 0 = 16
 
 Not ranked: 4 testers is below the 5-tester floor. At n = 4 one tester is 25% of the
 sample, so ordering by count would present noise as priority. Items are listed by
