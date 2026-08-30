@@ -1,6 +1,6 @@
 {
-    "generated": "2026-08-30T21:00:05+00:00",
-    "count": 37,
+    "generated": "2026-08-30T22:00:07+00:00",
+    "count": 39,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -333,6 +333,21 @@
             "raw": "https://emdly.com/raw/shopmetric/search-console-auditor.md"
         },
         {
+            "id": "launifycorp/shopify-store-audit",
+            "name": "shopify-store-audit",
+            "category": "Ecommerce",
+            "category_slug": "ecommerce",
+            "path": "ecommerce/shopify-store-audit.md",
+            "description": "Pre-launch readiness audit of a Shopify store from its URL alone, no admin access. Reads what the storefront publishes about itself — theme, currency, catalogue JSON, and the fixed policy URLs that either resolve or do not — and reports what a first customer would hit. Never completes a checkout, never judges whether a policy is legally adequate.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/shopify-store-audit",
+            "raw": "https://emdly.com/raw/launifycorp/shopify-store-audit.md"
+        },
+        {
             "id": "pixelforge/game-balance-reviewer",
             "name": "game-balance-reviewer",
             "category": "Game development",
@@ -556,6 +571,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/opsmith/standup-synthesizer",
             "raw": "https://emdly.com/raw/opsmith/standup-synthesizer.md"
+        },
+        {
+            "id": "launifycorp/grill-me",
+            "name": "grill-me",
+            "category": "Learning",
+            "category_slug": "learning",
+            "path": "learning/grill-me.md",
+            "description": "Puts you under hard questioning before someone else does — one question at a time, following the weakest thing you just said, never revealing the answer before you commit. Ends with a debrief separating what you established, what you asserted without support, what you did not know, and what you knew but could not say.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/launifycorp/grill-me",
+            "raw": "https://emdly.com/raw/launifycorp/grill-me.md"
         }
     ]
 }

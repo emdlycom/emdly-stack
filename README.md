@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 37 skills · updated 2026-08-30.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 39 skills · updated 2026-08-30.
 
 ## Categories
 
@@ -12,11 +12,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Design](#design) (1)
 - [Development](#development) (5)
 - [Docs & changelogs](#docs-changelogs) (2)
-- [Ecommerce](#ecommerce) (4)
+- [Ecommerce](#ecommerce) (5)
 - [Email & outreach](#email-outreach) (2)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
+- [Learning](#learning) (1)
 - [Product](#product) (1)
 - [Research](#research) (1)
 - [SEO](#seo) (3)
@@ -78,6 +79,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v5 | 🛡 |
 | [launifycorp/product-translator](ecommerce/product-translator.md) | Localises e-shop product records into a new market: titles, descriptions, attributes, categories and slugs. Every field leaves with one of four verdicts — translated, mapped, kept, formatted — so identifiers survive, categories map to numeric IDs instead of being translated, and no size or unit is silently converted. | v1 | 🛡 |
 | [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v5 | 🛡 |
+| [launifycorp/shopify-store-audit](ecommerce/shopify-store-audit.md) | Pre-launch readiness audit of a Shopify store from its URL alone, no admin access. Reads what the storefront publishes about itself — theme, currency, catalogue JSON, and the fixed policy URLs that either resolve or do not — and reports what a first customer would hit. Never completes a checkout, never judges whether a policy is legally adequate. | v1 | 🛡 |
 
 ## Email & outreach
 
@@ -104,6 +106,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [talentloop/take-home-grader](hiring/take-home-grader.md) | Grades take-home submissions against a rubric you define, blind to names, and writes feedback the candidate can actually use. | v4 | 🛡 |
+
+## Learning
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/grill-me](learning/grill-me.md) | Puts you under hard questioning before someone else does — one question at a time, following the weakest thing you just said, never revealing the answer before you commit. Ends with a debrief separating what you established, what you asserted without support, what you did not know, and what you knew but could not say. | v1 | 🛡 |
 
 ## Product
 
