@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://mcp.emdly.com`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 30 skills · updated 2026-08-29.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 30 skills · updated 2026-08-30.
 
 ## Categories
 
