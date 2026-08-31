@@ -1,6 +1,6 @@
 {
-    "generated": "2026-08-31T14:00:05+00:00",
-    "count": 39,
+    "generated": "2026-08-31T15:00:05+00:00",
+    "count": 41,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -586,6 +586,36 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/grill-me",
             "raw": "https://emdly.com/raw/launifycorp/grill-me.md"
+        },
+        {
+            "id": "launifycorp/email-sorter",
+            "name": "email-sorter",
+            "category": "Email &amp; outreach",
+            "category_slug": "email-amp-outreach",
+            "path": "email-amp-outreach/email-sorter.md",
+            "description": "Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes.",
+            "version": "v3",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-31",
+            "url": "https://emdly.com/skills/launifycorp/email-sorter",
+            "raw": "https://emdly.com/raw/launifycorp/email-sorter.md"
+        },
+        {
+            "id": "launifycorp/client-value-score",
+            "name": "client-value-score",
+            "category": "Data &amp; analytics",
+            "category_slug": "data-amp-analytics",
+            "path": "data-amp-analytics/client-value-score.md",
+            "description": "Works out what a client is actually worth from whatever systems the agent can reach — discovering those first, then proposing the search plan. Six measures that stand alone, each with its coverage, and a composite only when you supply the weights. Revenue is not value, size is not value, and concentration is reported as risk.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-08-31",
+            "url": "https://emdly.com/skills/launifycorp/client-value-score",
+            "raw": "https://emdly.com/raw/launifycorp/client-value-score.md"
         }
     ]
 }

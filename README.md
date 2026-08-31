@@ -2,18 +2,20 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 39 skills · updated 2026-08-31.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 41 skills · updated 2026-08-31.
 
 ## Categories
 
 - [Code review](#code-review) (2)
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
+- [Data &amp; analytics](#data-amp-analytics) (1)
 - [Design](#design) (1)
 - [Development](#development) (5)
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (5)
 - [Email & outreach](#email-outreach) (2)
+- [Email &amp; outreach](#email-amp-outreach) (1)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
@@ -47,6 +49,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
 | [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v5 | ★ 🛡 |
+
+## Data &amp; analytics
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/client-value-score](data-amp-analytics/client-value-score.md) | Works out what a client is actually worth from whatever systems the agent can reach — discovering those first, then proposing the search plan. Six measures that stand alone, each with its coverage, and a composite only when you supply the weights. Revenue is not value, size is not value, and concentration is reported as risk. | v1 | 🛡 |
 
 ## Design
 
@@ -87,6 +95,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [cartlift/abandoned-cart-sequence](email-outreach/abandoned-cart-sequence.md) | Drafts a three-mail abandoned-cart sequence from the cart contents and the store's voice — useful, specific, and honest about discounts. | v4 |  |
 | [outboundlab/cold-email-first-touch](email-outreach/cold-email-first-touch.md) | Writes first-touch e-mails that sound like a person — one observation, one sentence of value, one soft ask. Kills every buzzword on sight. | v4 | 🛡 |
+
+## Email &amp; outreach
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/email-sorter](email-amp-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
 
 ## Finance
 
