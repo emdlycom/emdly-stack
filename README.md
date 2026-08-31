@@ -2,14 +2,13 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 41 skills · updated 2026-08-31.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 40 skills · updated 2026-08-31.
 
 ## Categories
 
 - [Code review](#code-review) (2)
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
-- [Data &amp; analytics](#data-amp-analytics) (1)
 - [Design](#design) (1)
 - [Development](#development) (5)
 - [Docs & changelogs](#docs-changelogs) (2)
@@ -49,12 +48,6 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
 | [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v5 | ★ 🛡 |
-
-## Data &amp; analytics
-
-| skill | description | version | |
-|---|---|---|---|
-| [launifycorp/client-value-score](data-amp-analytics/client-value-score.md) | Works out what a client is actually worth from whatever systems the agent can reach — discovering those first, then proposing the search plan. Six measures that stand alone, each with its coverage, and a composite only when you supply the weights. Revenue is not value, size is not value, and concentration is reported as risk. | v1 | 🛡 |
 
 ## Design
 
