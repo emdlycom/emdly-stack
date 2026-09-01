@@ -23,10 +23,10 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Research](#research) (1)
 - [SEO](#seo) (3)
 - [Security](#security) (2)
-- [Skills](#skills) (1)
 - [Support](#support) (1)
 - [Team ops](#team-ops) (1)
 - [Ticket ops](#ticket-ops) (3)
+- [Utilities](#utilities) (1)
 
 ## Code review
 
@@ -148,12 +148,6 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [nullptr/dependency-cve-triage](security/dependency-cve-triage.md) | Triages a vulnerability report (Dependabot, npm audit, composer audit) — reachable or not, exploitable in this app or not, and what to do this week versus later. | v4 | 🛡 |
 | [nullptr/threat-model-sketch](security/threat-model-sketch.md) | Sketches a threat model for a feature from its description and data flow — assets, entry points, top threats by STRIDE, and the mitigation that exists or is missing. | v4 | 🛡 |
 
-## Skills
-
-| skill | description | version | |
-|---|---|---|---|
-| [promptsmith/skill-author-guide](skills/skill-author-guide.md) | How to write an emdly skill that passes review and actually works in an agent — structure, rules that bind, output contracts, and the mistakes reviewers bounce. | v5 | ★ 🛡 |
-
 ## Support
 
 | skill | description | version | |
@@ -173,5 +167,11 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [launifycorp/jira-sprint-summary](ticket-ops/jira-sprint-summary.md) | The outward-facing report after a sprint closes: a verdict against the sprint goal, committed versus delivered, blockers with a measured duration and a named dependency, hours grouped by work area with coverage stated first, and at most three improvements that each cite a number. Never per person. | v1 | 🛡 |
 | [opsmith/jira-ticket-scorer](ticket-ops/jira-ticket-scorer.md) | Scores every Jira ticket for clarity, scope and effort before it hits the sprint. Flags vague acceptance criteria and suggests a rewrite. | v5 | ★ 🛡 |
 | [opsmith/sprint-retro-facilitator](ticket-ops/sprint-retro-facilitator.md) | Prepares a retrospective from the sprint's data — what shipped, what slipped, where time went — and turns it into three concrete questions for the team. | v3 | 🛡 |
+
+## Utilities
+
+| skill | description | version | |
+|---|---|---|---|
+| [promptsmith/skill-author-guide](utilities/skill-author-guide.md) | How to write an emdly skill that passes review and actually works in an agent — structure, rules that bind, output contracts, and the mistakes reviewers bounce. | v5 | ★ 🛡 |
 
 ★ Emdly recommended · 🛡 Security checked (automated checks + clean AI safety scan + human review)

@@ -1,7 +1,7 @@
 ---
 name: skill-author-guide
 owner: promptsmith
-category: Skills
+category: Utilities
 description: How to write an emdly skill that passes review and actually works in an agent — structure, rules that bind, output contracts, and the mistakes reviewers bounce.
 version: v5
 license: MIT

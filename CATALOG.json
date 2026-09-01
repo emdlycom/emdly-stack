@@ -1,5 +1,5 @@
 {
-    "generated": "2026-09-01T09:00:06+00:00",
+    "generated": "2026-09-01T10:00:05+00:00",
     "count": 41,
     "skills": [
         {
@@ -498,21 +498,6 @@
             "raw": "https://emdly.com/raw/rankcraft/seo-brief-builder.md"
         },
         {
-            "id": "promptsmith/skill-author-guide",
-            "name": "skill-author-guide",
-            "category": "Skills",
-            "category_slug": "skills",
-            "path": "skills/skill-author-guide.md",
-            "description": "How to write an emdly skill that passes review and actually works in an agent — structure, rules that bind, output contracts, and the mistakes reviewers bounce.",
-            "version": "v5",
-            "license": "MIT",
-            "recommended": true,
-            "security_checked": true,
-            "updated": "2026-08-30",
-            "url": "https://emdly.com/skills/promptsmith/skill-author-guide",
-            "raw": "https://emdly.com/raw/promptsmith/skill-author-guide.md"
-        },
-        {
             "id": "helpdeskly/support-reply-drafter",
             "name": "support-reply-drafter",
             "category": "Support",
@@ -556,6 +541,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/fieldnotes/user-interview-distiller",
             "raw": "https://emdly.com/raw/fieldnotes/user-interview-distiller.md"
+        },
+        {
+            "id": "promptsmith/skill-author-guide",
+            "name": "skill-author-guide",
+            "category": "Utilities",
+            "category_slug": "utilities",
+            "path": "utilities/skill-author-guide.md",
+            "description": "How to write an emdly skill that passes review and actually works in an agent — structure, rules that bind, output contracts, and the mistakes reviewers bounce.",
+            "version": "v5",
+            "license": "MIT",
+            "recommended": true,
+            "security_checked": true,
+            "updated": "2026-08-30",
+            "url": "https://emdly.com/skills/promptsmith/skill-author-guide",
+            "raw": "https://emdly.com/raw/promptsmith/skill-author-guide.md"
         },
         {
             "id": "launifycorp/design-review",
