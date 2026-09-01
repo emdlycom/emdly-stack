@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 42 skills · updated 2026-09-01.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 43 skills · updated 2026-09-01.
 
 ## Categories
 
@@ -10,7 +10,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
 - [Design](#design) (1)
-- [Development](#development) (7)
+- [Development](#development) (8)
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (5)
 - [Email & outreach](#email-outreach) (2)
@@ -64,6 +64,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
 | [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v3 | 🛡 |
+| [launifycorp/locale-sync](development/locale-sync.md) | Finds a project's translation files, works out which language is the source of truth, and diffs every other locale against it. It reports coverage and gaps first, then offers two ways forward: fill th... | v1 | 🛡 |
 | [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
 | [launifycorp/stale-branch-cleaner](development/stale-branch-cleaner.md) | Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote... | v1 | ★ 🛡 |
 

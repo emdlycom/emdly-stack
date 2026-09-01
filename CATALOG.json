@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-01T12:00:05+00:00",
-    "count": 42,
+    "generated": "2026-09-01T13:00:05+00:00",
+    "count": 43,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -271,6 +271,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/linux-web-server-triage",
             "raw": "https://emdly.com/raw/launifycorp/linux-web-server-triage.md"
+        },
+        {
+            "id": "launifycorp/locale-sync",
+            "name": "locale-sync",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/locale-sync.md",
+            "description": "Finds a project's translation files, works out which language is the source of truth, and diffs every other locale against it. It reports coverage and gaps first, then offers two ways forward: fill th...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-01",
+            "url": "https://emdly.com/skills/launifycorp/locale-sync",
+            "raw": "https://emdly.com/raw/launifycorp/locale-sync.md"
         },
         {
             "id": "launifycorp/n8n-api",
