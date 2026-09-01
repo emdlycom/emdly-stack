@@ -6,7 +6,7 @@ description: Sorts raw playtest notes into balance, UX, bugs and feel — ranked
 version: v5
 license: MIT
 updated: 2026-08-30
-recommended: true
+recommended: false
 security_checked: true
 url: https://emdly.com/skills/pixelforge/playtest-feedback-triage
 raw: https://emdly.com/raw/pixelforge/playtest-feedback-triage.md

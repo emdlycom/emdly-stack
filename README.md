@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 40 skills · updated 2026-09-01.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 41 skills · updated 2026-09-01.
 
 ## Categories
 
@@ -10,11 +10,11 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (2)
 - [Design](#design) (1)
-- [Development](#development) (5)
+- [Development](#development) (6)
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (5)
 - [Email & outreach](#email-outreach) (2)
-- [Email &amp; outreach](#email-amp-outreach) (1)
+- [Email and outreach](#email-and-outreach) (1)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
@@ -60,10 +60,11 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
-| [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | ★ 🛡 |
+| [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
 | [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v3 | 🛡 |
 | [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
+| [launifycorp/stale-branch-cleaner](development/stale-branch-cleaner.md) | Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote... | v1 | ★ 🛡 |
 
 ## Docs & changelogs
 
@@ -89,11 +90,11 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [cartlift/abandoned-cart-sequence](email-outreach/abandoned-cart-sequence.md) | Drafts a three-mail abandoned-cart sequence from the cart contents and the store's voice — useful, specific, and honest about discounts. | v4 |  |
 | [outboundlab/cold-email-first-touch](email-outreach/cold-email-first-touch.md) | Writes first-touch e-mails that sound like a person — one observation, one sentence of value, one soft ask. Kills every buzzword on sight. | v4 | 🛡 |
 
-## Email &amp; outreach
+## Email and outreach
 
 | skill | description | version | |
 |---|---|---|---|
-| [launifycorp/email-sorter](email-amp-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
+| [launifycorp/email-sorter](email-and-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
 
 ## Finance
 
@@ -106,7 +107,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [pixelforge/game-balance-reviewer](game-development/game-balance-reviewer.md) | Reads stat tables and patch notes, then flags outliers — dominant strategies, dead perks, and curves that punish new players. | v4 | 🛡 |
-| [pixelforge/playtest-feedback-triage](game-development/playtest-feedback-triage.md) | Sorts raw playtest notes into balance, UX, bugs and feel — ranked by how many testers hit it, with repro steps pulled from context. | v5 | ★ 🛡 |
+| [pixelforge/playtest-feedback-triage](game-development/playtest-feedback-triage.md) | Sorts raw playtest notes into balance, UX, bugs and feel — ranked by how many testers hit it, with repro steps pulled from context. | v5 | 🛡 |
 
 ## Hiring
 

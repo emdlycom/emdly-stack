@@ -1,7 +1,7 @@
 ---
 name: email-sorter
 owner: launifycorp
-category: Email &amp; outreach
+category: Email and outreach
 description: Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes.
 version: v3
 license: MIT

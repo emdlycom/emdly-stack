@@ -6,7 +6,7 @@ description: Drafts blameless postmortems from a timeline and a channel export â
 version: v4
 license: MIT
 updated: 2026-08-30
-recommended: true
+recommended: false
 security_checked: true
 url: https://emdly.com/skills/sevzero/incident-postmortem
 raw: https://emdly.com/raw/sevzero/incident-postmortem.md

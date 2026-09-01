@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-01T08:00:05+00:00",
-    "count": 40,
+    "generated": "2026-09-01T09:00:06+00:00",
+    "count": 41,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -221,7 +221,7 @@
             "description": "Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners.",
             "version": "v4",
             "license": "MIT",
-            "recommended": true,
+            "recommended": false,
             "security_checked": true,
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/sevzero/incident-postmortem",
@@ -271,6 +271,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/n8n-api",
             "raw": "https://emdly.com/raw/launifycorp/n8n-api.md"
+        },
+        {
+            "id": "launifycorp/stale-branch-cleaner",
+            "name": "stale-branch-cleaner",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/stale-branch-cleaner.md",
+            "description": "Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": true,
+            "security_checked": true,
+            "updated": "2026-09-01",
+            "url": "https://emdly.com/skills/launifycorp/stale-branch-cleaner",
+            "raw": "https://emdly.com/raw/launifycorp/stale-branch-cleaner.md"
         },
         {
             "id": "shopmetric/ga4-funnel-analyst",
@@ -371,7 +386,7 @@
             "description": "Sorts raw playtest notes into balance, UX, bugs and feel — ranked by how many testers hit it, with repro steps pulled from context.",
             "version": "v5",
             "license": "MIT",
-            "recommended": true,
+            "recommended": false,
             "security_checked": true,
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/pixelforge/playtest-feedback-triage",
@@ -590,9 +605,9 @@
         {
             "id": "launifycorp/email-sorter",
             "name": "email-sorter",
-            "category": "Email &amp; outreach",
-            "category_slug": "email-amp-outreach",
-            "path": "email-amp-outreach/email-sorter.md",
+            "category": "Email and outreach",
+            "category_slug": "email-and-outreach",
+            "path": "email-and-outreach/email-sorter.md",
             "description": "Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes.",
             "version": "v3",
             "license": "MIT",
