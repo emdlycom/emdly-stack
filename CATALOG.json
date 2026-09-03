@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-01",
-    "count": 43,
+    "generated": "2026-09-03",
+    "count": 44,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -263,12 +263,12 @@
             "category": "Development",
             "category_slug": "development",
             "path": "development/linux-web-server-triage.md",
-            "description": "Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for \"down\" and \"slow\", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates.",
-            "version": "v3",
+            "description": "Read-only triage for a Linux box serving a site over nginx or Apache, with PHP-FPM, bare metal or in Docker. Separate ladders for \"down\" and \"slow\", a verbatim read-only command allowlist, the 502/504/499 split by errno, pool saturation versus memory_limit versus OOM kill, certbot renewal traps, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates.",
+            "version": "v4",
             "license": "MIT",
             "recommended": false,
             "security_checked": true,
-            "updated": "2026-08-30",
+            "updated": "2026-09-03",
             "url": "https://emdly.com/skills/launifycorp/linux-web-server-triage",
             "raw": "https://emdly.com/raw/launifycorp/linux-web-server-triage.md"
         },
@@ -309,11 +309,11 @@
             "category_slug": "development",
             "path": "development/stale-branch-cleaner.md",
             "description": "Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote...",
-            "version": "v1",
+            "version": "v2",
             "license": "MIT",
             "recommended": true,
             "security_checked": true,
-            "updated": "2026-09-01",
+            "updated": "2026-09-03",
             "url": "https://emdly.com/skills/launifycorp/stale-branch-cleaner",
             "raw": "https://emdly.com/raw/launifycorp/stale-branch-cleaner.md"
         },
@@ -631,6 +631,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/grill-me",
             "raw": "https://emdly.com/raw/launifycorp/grill-me.md"
+        },
+        {
+            "id": "launifycorp/email-deliverability-audit",
+            "name": "email-deliverability-audit",
+            "category": "Email and outreach",
+            "category_slug": "email-and-outreach",
+            "path": "email-and-outreach/email-deliverability-audit.md",
+            "description": "Audits a domain's sending configuration from its public DNS alone — no mailbox, no ESP login, no access to anything. It reports what is configured, what is broken, and what the large mailbox operators...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-03",
+            "url": "https://emdly.com/skills/launifycorp/email-deliverability-audit",
+            "raw": "https://emdly.com/raw/launifycorp/email-deliverability-audit.md"
         },
         {
             "id": "launifycorp/email-sorter",

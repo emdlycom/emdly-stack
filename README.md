@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 43 skills · updated 2026-09-01.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 44 skills · updated 2026-09-03.
 
 ## Categories
 
@@ -14,7 +14,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Docs & changelogs](#docs-changelogs) (2)
 - [Ecommerce](#ecommerce) (5)
 - [Email & outreach](#email-outreach) (2)
-- [Email and outreach](#email-and-outreach) (1)
+- [Email and outreach](#email-and-outreach) (2)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
@@ -63,10 +63,10 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
-| [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a single Linux box serving a site over nginx and PHP-FPM. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 distinction by errno, PHP-FPM pool saturation versus memory_limit versus OOM kill, certbot renewal traps and rate limits, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v3 | 🛡 |
+| [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a Linux box serving a site over nginx or Apache, with PHP-FPM, bare metal or in Docker. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 split by errno, pool saturation versus memory_limit versus OOM kill, certbot renewal traps, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v4 | 🛡 |
 | [launifycorp/locale-sync](development/locale-sync.md) | Finds a project's translation files, works out which language is the source of truth, and diffs every other locale against it. It reports coverage and gaps first, then offers two ways forward: fill th... | v1 | 🛡 |
 | [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
-| [launifycorp/stale-branch-cleaner](development/stale-branch-cleaner.md) | Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote... | v1 | ★ 🛡 |
+| [launifycorp/stale-branch-cleaner](development/stale-branch-cleaner.md) | Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote... | v2 | ★ 🛡 |
 
 ## Docs & changelogs
 
@@ -96,6 +96,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/email-deliverability-audit](email-and-outreach/email-deliverability-audit.md) | Audits a domain's sending configuration from its public DNS alone — no mailbox, no ESP login, no access to anything. It reports what is configured, what is broken, and what the large mailbox operators... | v1 | 🛡 |
 | [launifycorp/email-sorter](email-and-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
 
 ## Finance
