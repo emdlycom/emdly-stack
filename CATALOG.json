@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-03",
-    "count": 44,
+    "generated": "2026-09-05",
+    "count": 45,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -661,6 +661,21 @@
             "updated": "2026-08-31",
             "url": "https://emdly.com/skills/launifycorp/email-sorter",
             "raw": "https://emdly.com/raw/launifycorp/email-sorter.md"
+        },
+        {
+            "id": "launifycorp/code-documentation",
+            "name": "code-documentation",
+            "category": "Docs &amp; changelogs",
+            "category_slug": "docs-amp-changelogs",
+            "path": "docs-amp-changelogs/code-documentation.md",
+            "description": "Documents code so it is still true in a year. Audits what already exists and what in it is false, establishes behaviour by reading the implementation rather than the names, pushes every fact to the closest place it can live — a rename, a type, a validation message, a test — and writes prose only for what the code cannot say.",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-05",
+            "url": "https://emdly.com/skills/launifycorp/code-documentation",
+            "raw": "https://emdly.com/raw/launifycorp/code-documentation.md"
         }
     ]
 }

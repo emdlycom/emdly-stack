@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 44 skills · updated 2026-09-03.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 45 skills · updated 2026-09-05.
 
 ## Categories
 
@@ -12,6 +12,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Design](#design) (1)
 - [Development](#development) (8)
 - [Docs & changelogs](#docs-changelogs) (2)
+- [Docs &amp; changelogs](#docs-amp-changelogs) (1)
 - [Ecommerce](#ecommerce) (5)
 - [Email & outreach](#email-outreach) (2)
 - [Email and outreach](#email-and-outreach) (2)
@@ -74,6 +75,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [shiplog/api-reference-writer](docs-changelogs/api-reference-writer.md) | Writes an endpoint's reference page from its route, request validation and response shape — every field, every error, one working example. | v3 | 🛡 |
 | [shiplog/changelog-composer](docs-changelogs/changelog-composer.md) | Turns a week of merged PRs into a changelog humans read — grouped by impact, written for users, breaking changes on top. | v4 | 🛡 |
+
+## Docs &amp; changelogs
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/code-documentation](docs-amp-changelogs/code-documentation.md) | Documents code so it is still true in a year. Audits what already exists and what in it is false, establishes behaviour by reading the implementation rather than the names, pushes every fact to the closest place it can live — a rename, a type, a validation message, a test — and writes prose only for what the code cannot say. | v1 | 🛡 |
 
 ## Ecommerce
 
