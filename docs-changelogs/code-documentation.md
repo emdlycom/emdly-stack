@@ -1,7 +1,7 @@
 ---
 name: code-documentation
 owner: launifycorp
-category: Docs &amp; changelogs
+category: Docs & changelogs
 description: Documents code so it is still true in a year. Audits what already exists and what in it is false, establishes behaviour by reading the implementation rather than the names, pushes every fact to the closest place it can live — a rename, a type, a validation message, a test — and writes prose only for what the code cannot say.
 version: v1
 license: MIT

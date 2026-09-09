@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 45 skills · updated 2026-09-05.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 46 skills · updated 2026-09-09.
 
 ## Categories
 
@@ -11,11 +11,9 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Data & analytics](#data-analytics) (2)
 - [Design](#design) (1)
 - [Development](#development) (8)
-- [Docs & changelogs](#docs-changelogs) (2)
-- [Docs &amp; changelogs](#docs-amp-changelogs) (1)
-- [Ecommerce](#ecommerce) (5)
-- [Email & outreach](#email-outreach) (2)
-- [Email and outreach](#email-and-outreach) (2)
+- [Docs & changelogs](#docs-changelogs) (3)
+- [Ecommerce](#ecommerce) (6)
+- [Email & outreach](#email-outreach) (4)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
@@ -75,12 +73,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [shiplog/api-reference-writer](docs-changelogs/api-reference-writer.md) | Writes an endpoint's reference page from its route, request validation and response shape — every field, every error, one working example. | v3 | 🛡 |
 | [shiplog/changelog-composer](docs-changelogs/changelog-composer.md) | Turns a week of merged PRs into a changelog humans read — grouped by impact, written for users, breaking changes on top. | v4 | 🛡 |
-
-## Docs &amp; changelogs
-
-| skill | description | version | |
-|---|---|---|---|
-| [launifycorp/code-documentation](docs-amp-changelogs/code-documentation.md) | Documents code so it is still true in a year. Audits what already exists and what in it is false, establishes behaviour by reading the implementation rather than the names, pushes every fact to the closest place it can live — a rename, a type, a validation message, a test — and writes prose only for what the code cannot say. | v1 | 🛡 |
+| [launifycorp/code-documentation](docs-changelogs/code-documentation.md) | Documents code so it is still true in a year. Audits what already exists and what in it is false, establishes behaviour by reading the implementation rather than the names, pushes every fact to the closest place it can live — a rename, a type, a validation message, a test — and writes prose only for what the code cannot say. | v1 | 🛡 |
 
 ## Ecommerce
 
@@ -88,6 +81,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [shopmetric/ga4-funnel-analyst](ecommerce/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v5 | ★ 🛡 |
 | [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v5 | 🛡 |
+| [launifycorp/product-translation-audit](ecommerce/product-translation-audit.md) | Scores the quality of a product catalogue's translations market by market, and returns concrete rewrites for what drags the score down. It judges a translation the way a shop owner should: not "is it... | v1 | 🛡 |
 | [launifycorp/product-translator](ecommerce/product-translator.md) | Localises e-shop product records into a new market: titles, descriptions, attributes, categories and slugs. Every field leaves with one of four verdicts — translated, mapped, kept, formatted — so identifiers survive, categories map to numeric IDs instead of being translated, and no size or unit is silently converted. | v1 | 🛡 |
 | [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v5 | 🛡 |
 | [launifycorp/shopify-store-audit](ecommerce/shopify-store-audit.md) | Pre-launch readiness audit of a Shopify store from its URL alone, no admin access. Reads what the storefront publishes about itself — theme, currency, catalogue JSON, and the fixed policy URLs that either resolve or do not — and reports what a first customer would hit. Never completes a checkout, never judges whether a policy is legally adequate. | v1 | 🛡 |
@@ -98,13 +92,8 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [cartlift/abandoned-cart-sequence](email-outreach/abandoned-cart-sequence.md) | Drafts a three-mail abandoned-cart sequence from the cart contents and the store's voice — useful, specific, and honest about discounts. | v4 |  |
 | [outboundlab/cold-email-first-touch](email-outreach/cold-email-first-touch.md) | Writes first-touch e-mails that sound like a person — one observation, one sentence of value, one soft ask. Kills every buzzword on sight. | v4 | 🛡 |
-
-## Email and outreach
-
-| skill | description | version | |
-|---|---|---|---|
-| [launifycorp/email-deliverability-audit](email-and-outreach/email-deliverability-audit.md) | Audits a domain's sending configuration from its public DNS alone — no mailbox, no ESP login, no access to anything. It reports what is configured, what is broken, and what the large mailbox operators... | v1 | 🛡 |
-| [launifycorp/email-sorter](email-and-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
+| [launifycorp/email-deliverability-audit](email-outreach/email-deliverability-audit.md) | Audits a domain's sending configuration from its public DNS alone — no mailbox, no ESP login, no access to anything. It reports what is configured, what is broken, and what the large mailbox operators... | v1 | 🛡 |
+| [launifycorp/email-sorter](email-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
 
 ## Finance
 

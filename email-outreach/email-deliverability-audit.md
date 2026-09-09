@@ -1,7 +1,7 @@
 ---
 name: email-deliverability-audit
 owner: launifycorp
-category: Email and outreach
+category: Email & outreach
 description: Audits a domain's sending configuration from its public DNS alone — no mailbox, no ESP login, no access to anything. It reports what is configured, what is broken, and what the large mailbox operators...
 version: v1
 license: MIT
