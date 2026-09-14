@@ -2,17 +2,17 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 46 skills · updated 2026-09-09.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 49 skills · updated 2026-09-14.
 
 ## Categories
 
 - [Code review](#code-review) (2)
 - [Copywriting](#copywriting) (2)
-- [Data & analytics](#data-analytics) (2)
+- [Data & analytics](#data-analytics) (3)
 - [Design](#design) (1)
 - [Development](#development) (8)
 - [Docs & changelogs](#docs-changelogs) (3)
-- [Ecommerce](#ecommerce) (6)
+- [Ecommerce](#ecommerce) (8)
 - [Email & outreach](#email-outreach) (4)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
@@ -46,6 +46,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
+| [launifycorp/okr-quarterly-scorecard](data-analytics/okr-quarterly-scorecard.md) | Drafts a monthly investor update email from a founder/CEO to existing investors, combining hard metrics, narrative context, honest risk disclosure, and specific asks. You own the finished draft: metri... | v1 | 🛡 |
 | [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v5 | ★ 🛡 |
 
 ## Design
@@ -80,11 +81,13 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [shopmetric/ga4-funnel-analyst](ecommerce/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v5 | ★ 🛡 |
+| [launifycorp/gdpr-clause-scanner](ecommerce/gdpr-clause-scanner.md) | You scan an eshop's terms and conditions, privacy policy, and cookie notice against the disclosures GDPR requires (Articles 12–22, plus ePrivacy consent rules and any national overlay for the selected... | v1 | 🛡 |
 | [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v5 | 🛡 |
 | [launifycorp/product-translation-audit](ecommerce/product-translation-audit.md) | Scores the quality of a product catalogue's translations market by market, and returns concrete rewrites for what drags the score down. It judges a translation the way a shop owner should: not "is it... | v1 | 🛡 |
 | [launifycorp/product-translator](ecommerce/product-translator.md) | Localises e-shop product records into a new market: titles, descriptions, attributes, categories and slugs. Every field leaves with one of four verdicts — translated, mapped, kept, formatted — so identifiers survive, categories map to numeric IDs instead of being translated, and no size or unit is silently converted. | v1 | 🛡 |
 | [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v5 | 🛡 |
 | [launifycorp/shopify-store-audit](ecommerce/shopify-store-audit.md) | Pre-launch readiness audit of a Shopify store from its URL alone, no admin access. Reads what the storefront publishes about itself — theme, currency, catalogue JSON, and the fixed policy URLs that either resolve or do not — and reports what a first customer would hit. Never completes a checkout, never judges whether a policy is legally adequate. | v1 | 🛡 |
+| [launifycorp/tos-country-compliance-check](ecommerce/tos-country-compliance-check.md) | You review an ecommerce store's terms and conditions (obchodní podmínky) against the mandatory consumer protection law of one selected country and produce a clausebyclause finding list. You own one ou... | v1 | 🛡 |
 
 ## Email & outreach
 

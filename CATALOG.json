@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-09",
-    "count": 46,
+    "generated": "2026-09-14",
+    "count": 49,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -198,6 +198,21 @@
             "raw": "https://emdly.com/raw/querydeck/dashboard-metric-definer.md"
         },
         {
+            "id": "launifycorp/okr-quarterly-scorecard",
+            "name": "okr-quarterly-scorecard",
+            "category": "Data & analytics",
+            "category_slug": "data-analytics",
+            "path": "data-analytics/okr-quarterly-scorecard.md",
+            "description": "Drafts a monthly investor update email from a founder/CEO to existing investors, combining hard metrics, narrative context, honest risk disclosure, and specific asks. You own the finished draft: metri...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-14",
+            "url": "https://emdly.com/skills/launifycorp/okr-quarterly-scorecard",
+            "raw": "https://emdly.com/raw/launifycorp/okr-quarterly-scorecard.md"
+        },
+        {
             "id": "querydeck/sql-query-explainer",
             "name": "sql-query-explainer",
             "category": "Data & analytics",
@@ -378,6 +393,21 @@
             "raw": "https://emdly.com/raw/shopmetric/ga4-funnel-analyst.md"
         },
         {
+            "id": "launifycorp/gdpr-clause-scanner",
+            "name": "gdpr-clause-scanner",
+            "category": "Ecommerce",
+            "category_slug": "ecommerce",
+            "path": "ecommerce/gdpr-clause-scanner.md",
+            "description": "You scan an eshop's terms and conditions, privacy policy, and cookie notice against the disclosures GDPR requires (Articles 12–22, plus ePrivacy consent rules and any national overlay for the selected...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-14",
+            "url": "https://emdly.com/skills/launifycorp/gdpr-clause-scanner",
+            "raw": "https://emdly.com/raw/launifycorp/gdpr-clause-scanner.md"
+        },
+        {
             "id": "cartlift/product-feed-optimizer",
             "name": "product-feed-optimizer",
             "category": "Ecommerce",
@@ -451,6 +481,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/shopify-store-audit",
             "raw": "https://emdly.com/raw/launifycorp/shopify-store-audit.md"
+        },
+        {
+            "id": "launifycorp/tos-country-compliance-check",
+            "name": "tos-country-compliance-check",
+            "category": "Ecommerce",
+            "category_slug": "ecommerce",
+            "path": "ecommerce/tos-country-compliance-check.md",
+            "description": "You review an ecommerce store's terms and conditions (obchodní podmínky) against the mandatory consumer protection law of one selected country and produce a clausebyclause finding list. You own one ou...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-14",
+            "url": "https://emdly.com/skills/launifycorp/tos-country-compliance-check",
+            "raw": "https://emdly.com/raw/launifycorp/tos-country-compliance-check.md"
         },
         {
             "id": "pixelforge/game-balance-reviewer",
