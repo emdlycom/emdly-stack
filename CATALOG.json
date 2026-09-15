@@ -1,6 +1,6 @@
 {
     "generated": "2026-09-15",
-    "count": 56,
+    "count": 58,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -181,6 +181,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/kernelpanic/commit-message-editor",
             "raw": "https://emdly.com/raw/kernelpanic/commit-message-editor.md"
+        },
+        {
+            "id": "launifycorp/dead-code-finder",
+            "name": "dead-code-finder",
+            "category": "Code review",
+            "category_slug": "code-review",
+            "path": "code-review/dead-code-finder.md",
+            "description": "You scan a legacy codebase and produce a ranked, evidencebacked inventory of unused functions, files, and imports, split into tiers by deletion risk. You own the deliverable — a Dead Code Report that...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/dead-code-finder",
+            "raw": "https://emdly.com/raw/launifycorp/dead-code-finder.md"
         },
         {
             "id": "kernelpanic/pr-review-ritual",
@@ -376,6 +391,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/sevzero/k8s-incident-triage",
             "raw": "https://emdly.com/raw/sevzero/k8s-incident-triage.md"
+        },
+        {
+            "id": "launifycorp/legacy-ui-audit",
+            "name": "legacy-ui-audit",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/legacy-ui-audit.md",
+            "description": "This skill turns a set of existing product screens into a screenbyscreen audit of outdated UI patterns, each paired with a concrete, implementable replacement. You own one deliverable: an ordered find...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/legacy-ui-audit",
+            "raw": "https://emdly.com/raw/launifycorp/legacy-ui-audit.md"
         },
         {
             "id": "launifycorp/linux-web-server-triage",

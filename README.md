@@ -2,15 +2,15 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 56 skills · updated 2026-09-15.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 58 skills · updated 2026-09-15.
 
 ## Categories
 
-- [Code review](#code-review) (2)
+- [Code review](#code-review) (3)
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (4)
 - [Design](#design) (1)
-- [Development](#development) (10)
+- [Development](#development) (11)
 - [Docs & changelogs](#docs-changelogs) (3)
 - [Ecommerce](#ecommerce) (8)
 - [Email & outreach](#email-outreach) (5)
@@ -33,6 +33,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [kernelpanic/commit-message-editor](code-review/commit-message-editor.md) | Rewrites a commit message from the diff — imperative subject under 72 characters, a body that explains why, and a footer that links the issue. | v4 | 🛡 |
+| [launifycorp/dead-code-finder](code-review/dead-code-finder.md) | You scan a legacy codebase and produce a ranked, evidencebacked inventory of unused functions, files, and imports, split into tiers by deletion risk. You own the deliverable — a Dead Code Report that... | v1 | 🛡 |
 | [kernelpanic/pr-review-ritual](code-review/pr-review-ritual.md) | A reviewing discipline for agents — read the diff twice, test the edge cases, comment on intent, never nitpick formatting a linter owns. | v5 | ★ 🛡 |
 
 ## Copywriting
@@ -67,6 +68,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
+| [launifycorp/legacy-ui-audit](development/legacy-ui-audit.md) | This skill turns a set of existing product screens into a screenbyscreen audit of outdated UI patterns, each paired with a concrete, implementable replacement. You own one deliverable: an ordered find... | v1 | 🛡 |
 | [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a Linux box serving a site over nginx or Apache, with PHP-FPM, bare metal or in Docker. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 split by errno, pool saturation versus memory_limit versus OOM kill, certbot renewal traps, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v4 | 🛡 |
 | [launifycorp/locale-sync](development/locale-sync.md) | Finds a project's translation files, works out which language is the source of truth, and diffs every other locale against it. It reports coverage and gaps first, then offers two ways forward: fill th... | v1 | 🛡 |
 | [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
