@@ -2,24 +2,25 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 49 skills · updated 2026-09-14.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 55 skills · updated 2026-09-15.
 
 ## Categories
 
 - [Code review](#code-review) (2)
 - [Copywriting](#copywriting) (2)
-- [Data & analytics](#data-analytics) (3)
+- [Data & analytics](#data-analytics) (4)
 - [Design](#design) (1)
-- [Development](#development) (8)
+- [Development](#development) (9)
 - [Docs & changelogs](#docs-changelogs) (3)
 - [Ecommerce](#ecommerce) (8)
-- [Email & outreach](#email-outreach) (4)
+- [Email & outreach](#email-outreach) (5)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
 - [Learning](#learning) (1)
+- [Marketing](#marketing) (2)
 - [Product](#product) (1)
-- [Research](#research) (1)
+- [Research](#research) (2)
 - [SEO](#seo) (3)
 - [Security](#security) (2)
 - [Support](#support) (1)
@@ -47,6 +48,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
 | [launifycorp/okr-quarterly-scorecard](data-analytics/okr-quarterly-scorecard.md) | Drafts a monthly investor update email from a founder/CEO to existing investors, combining hard metrics, narrative context, honest risk disclosure, and specific asks. You own the finished draft: metri... | v1 | 🛡 |
+| [launifycorp/prioritize-backlog-rice](data-analytics/prioritize-backlog-rice.md) | You score and rank a set of backlog items using the RICE framework (Reach × Impact × Confidence ÷ Effort) and return a sorted priority table with peritem reasoning and explicit assumptions. You own th... | v1 | 🛡 |
 | [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v5 | ★ 🛡 |
 
 ## Design
@@ -59,6 +61,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/changelog-from-commits](development/changelog-from-commits.md) | You turn raw commit logs or merged PR lists into a categorized, userfacing changelog entry for a specific release. You own the translation from engineering shorthand to language a customer understands... | v1 | 🛡 |
 | [launifycorp/dependency-audit](development/dependency-audit.md) | Audits a project's dependencies and produces a prioritised upgrade plan: what is a security risk, what has drifted behind, and what is not used at all. It reports and recommends — it does not install,... | v1 | 🛡 |
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |
@@ -97,6 +100,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [outboundlab/cold-email-first-touch](email-outreach/cold-email-first-touch.md) | Writes first-touch e-mails that sound like a person — one observation, one sentence of value, one soft ask. Kills every buzzword on sight. | v4 | 🛡 |
 | [launifycorp/email-deliverability-audit](email-outreach/email-deliverability-audit.md) | Audits a domain's sending configuration from its public DNS alone — no mailbox, no ESP login, no access to anything. It reports what is configured, what is broken, and what the large mailbox operators... | v1 | 🛡 |
 | [launifycorp/email-sorter](email-outreach/email-sorter.md) | Triages a mailbox into what needs money, what needs an answer, what is a record, and what is noise — running an authenticity pass first, so a fake invoice never gets filed under invoices. Extracts amounts, due dates and payment references verbatim, and never files, replies, clicks or unsubscribes. | v3 | 🛡 |
+| [launifycorp/newsletter-recap](email-outreach/newsletter-recap.md) | You turn a week's published blog posts into a sendready email digest: a subject line, preview text, a short intro, one summary block per post with a working link, and a closing CTA. You own the finish... | v1 | 🛡 |
 
 ## Finance
 
@@ -123,6 +127,13 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [launifycorp/grill-me](learning/grill-me.md) | Puts you under hard questioning before someone else does — one question at a time, following the weakest thing you just said, never revealing the answer before you commit. Ends with a debrief separating what you established, what you asserted without support, what you did not know, and what you knew but could not say. | v1 | 🛡 |
 
+## Marketing
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/internal-link-audit](marketing/internal-link-audit.md) | You scan a defined set of blog posts, map the internal links that exist between them, and produce a prioritized list of missing, broken, or wasteful links with exact anchor text and insertion points.... | v1 | 🛡 |
+| [launifycorp/sklik-campaign-audit](marketing/sklik-campaign-audit.md) | You audit a Sklik (Seznam) advertising account and produce a prioritised findings list covering wasted spend, broken or rejected ads, and bidding misconfiguration. You own the deliverable: a written a... | v1 | 🛡 |
+
 ## Product
 
 | skill | description | version | |
@@ -133,6 +144,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/competitor-landscape-brief](research/competitor-landscape-brief.md) | You produce a decisiongrade brief on a defined set of competitors: how each positions itself, what it charges, and what it has done in the last 612 months. The outcome you own is a CEOreadable documen... | v1 | 🛡 |
 | [fieldnotes/user-interview-distiller](research/user-interview-distiller.md) | Distills interview transcripts into claims with evidence — what was said, how often, and what it contradicts in your assumptions. | v5 | 🛡 |
 
 ## SEO

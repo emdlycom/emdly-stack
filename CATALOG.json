@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-14",
-    "count": 49,
+    "generated": "2026-09-15",
+    "count": 55,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -61,6 +61,21 @@
             "updated": "2026-08-31",
             "url": "https://emdly.com/skills/launifycorp/email-sorter",
             "raw": "https://emdly.com/raw/launifycorp/email-sorter.md"
+        },
+        {
+            "id": "launifycorp/newsletter-recap",
+            "name": "newsletter-recap",
+            "category": "Email & outreach",
+            "category_slug": "email-outreach",
+            "path": "email-outreach/newsletter-recap.md",
+            "description": "You turn a week's published blog posts into a sendready email digest: a subject line, preview text, a short intro, one summary block per post with a working link, and a closing CTA. You own the finish...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/newsletter-recap",
+            "raw": "https://emdly.com/raw/launifycorp/newsletter-recap.md"
         },
         {
             "id": "shiplog/api-reference-writer",
@@ -213,6 +228,21 @@
             "raw": "https://emdly.com/raw/launifycorp/okr-quarterly-scorecard.md"
         },
         {
+            "id": "launifycorp/prioritize-backlog-rice",
+            "name": "prioritize-backlog-rice",
+            "category": "Data & analytics",
+            "category_slug": "data-analytics",
+            "path": "data-analytics/prioritize-backlog-rice.md",
+            "description": "You score and rank a set of backlog items using the RICE framework (Reach × Impact × Confidence ÷ Effort) and return a sorted priority table with peritem reasoning and explicit assumptions. You own th...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/prioritize-backlog-rice",
+            "raw": "https://emdly.com/raw/launifycorp/prioritize-backlog-rice.md"
+        },
+        {
             "id": "querydeck/sql-query-explainer",
             "name": "sql-query-explainer",
             "category": "Data & analytics",
@@ -256,6 +286,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/nullptr/threat-model-sketch",
             "raw": "https://emdly.com/raw/nullptr/threat-model-sketch.md"
+        },
+        {
+            "id": "launifycorp/changelog-from-commits",
+            "name": "changelog-from-commits",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/changelog-from-commits.md",
+            "description": "You turn raw commit logs or merged PR lists into a categorized, userfacing changelog entry for a specific release. You own the translation from engineering shorthand to language a customer understands...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/changelog-from-commits",
+            "raw": "https://emdly.com/raw/launifycorp/changelog-from-commits.md"
         },
         {
             "id": "launifycorp/dependency-audit",
@@ -663,6 +708,21 @@
             "raw": "https://emdly.com/raw/talentloop/take-home-grader.md"
         },
         {
+            "id": "launifycorp/competitor-landscape-brief",
+            "name": "competitor-landscape-brief",
+            "category": "Research",
+            "category_slug": "research",
+            "path": "research/competitor-landscape-brief.md",
+            "description": "You produce a decisiongrade brief on a defined set of competitors: how each positions itself, what it charges, and what it has done in the last 612 months. The outcome you own is a CEOreadable documen...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/competitor-landscape-brief",
+            "raw": "https://emdly.com/raw/launifycorp/competitor-landscape-brief.md"
+        },
+        {
             "id": "fieldnotes/user-interview-distiller",
             "name": "user-interview-distiller",
             "category": "Research",
@@ -736,6 +796,36 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/grill-me",
             "raw": "https://emdly.com/raw/launifycorp/grill-me.md"
+        },
+        {
+            "id": "launifycorp/internal-link-audit",
+            "name": "internal-link-audit",
+            "category": "Marketing",
+            "category_slug": "marketing",
+            "path": "marketing/internal-link-audit.md",
+            "description": "You scan a defined set of blog posts, map the internal links that exist between them, and produce a prioritized list of missing, broken, or wasteful links with exact anchor text and insertion points....",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/internal-link-audit",
+            "raw": "https://emdly.com/raw/launifycorp/internal-link-audit.md"
+        },
+        {
+            "id": "launifycorp/sklik-campaign-audit",
+            "name": "sklik-campaign-audit",
+            "category": "Marketing",
+            "category_slug": "marketing",
+            "path": "marketing/sklik-campaign-audit.md",
+            "description": "You audit a Sklik (Seznam) advertising account and produce a prioritised findings list covering wasted spend, broken or rejected ads, and bidding misconfiguration. You own the deliverable: a written a...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/sklik-campaign-audit",
+            "raw": "https://emdly.com/raw/launifycorp/sklik-campaign-audit.md"
         }
     ]
 }
