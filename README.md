@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 55 skills · updated 2026-09-15.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 56 skills · updated 2026-09-15.
 
 ## Categories
 
@@ -10,7 +10,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (4)
 - [Design](#design) (1)
-- [Development](#development) (9)
+- [Development](#development) (10)
 - [Docs & changelogs](#docs-changelogs) (3)
 - [Ecommerce](#ecommerce) (8)
 - [Email & outreach](#email-outreach) (5)
@@ -62,6 +62,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [launifycorp/changelog-from-commits](development/changelog-from-commits.md) | You turn raw commit logs or merged PR lists into a categorized, userfacing changelog entry for a specific release. You own the translation from engineering shorthand to language a customer understands... | v1 | 🛡 |
+| [launifycorp/database-schema-audit](development/database-schema-audit.md) | You review a relational database schema (DDL, ORM models, or introspection dump) and produce a prioritized audit report covering missing or redundant indexes, unused and duplicated columns, normalizat... | v1 | 🛡 |
 | [launifycorp/dependency-audit](development/dependency-audit.md) | Audits a project's dependencies and produces a prioritised upgrade plan: what is a security risk, what has drifted behind, and what is not used at all. It reports and recommends — it does not install,... | v1 | 🛡 |
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |

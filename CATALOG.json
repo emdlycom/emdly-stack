@@ -1,6 +1,6 @@
 {
     "generated": "2026-09-15",
-    "count": 55,
+    "count": 56,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -301,6 +301,21 @@
             "updated": "2026-09-15",
             "url": "https://emdly.com/skills/launifycorp/changelog-from-commits",
             "raw": "https://emdly.com/raw/launifycorp/changelog-from-commits.md"
+        },
+        {
+            "id": "launifycorp/database-schema-audit",
+            "name": "database-schema-audit",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/database-schema-audit.md",
+            "description": "You review a relational database schema (DDL, ORM models, or introspection dump) and produce a prioritized audit report covering missing or redundant indexes, unused and duplicated columns, normalizat...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-15",
+            "url": "https://emdly.com/skills/launifycorp/database-schema-audit",
+            "raw": "https://emdly.com/raw/launifycorp/database-schema-audit.md"
         },
         {
             "id": "launifycorp/dependency-audit",
