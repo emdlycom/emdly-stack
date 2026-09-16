@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-15",
-    "count": 58,
+    "generated": "2026-09-16",
+    "count": 61,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -181,6 +181,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/kernelpanic/commit-message-editor",
             "raw": "https://emdly.com/raw/kernelpanic/commit-message-editor.md"
+        },
+        {
+            "id": "launifycorp/css-refactor-plan",
+            "name": "css-refactor-plan",
+            "category": "Code review",
+            "category_slug": "code-review",
+            "path": "code-review/css-refactor-plan.md",
+            "description": "This skill turns a legacy stylesheet base into a prioritized, sequenced refactor plan toward a tokendriven design system. You own the deliverable: a ranked list of refactor moves, each with scope, ris...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-16",
+            "url": "https://emdly.com/skills/launifycorp/css-refactor-plan",
+            "raw": "https://emdly.com/raw/launifycorp/css-refactor-plan.md"
         },
         {
             "id": "launifycorp/dead-code-finder",
@@ -813,6 +828,21 @@
             "raw": "https://emdly.com/raw/launifycorp/design-review.md"
         },
         {
+            "id": "launifycorp/sprint-goal-summary",
+            "name": "sprint-goal-summary",
+            "category": "Team ops",
+            "category_slug": "team-ops",
+            "path": "team-ops/sprint-goal-summary.md",
+            "description": "Turn raw sprint planning notes into a single, testable sprint goal plus a scoped commitment summary the team and stakeholders can act on. You own the output that answers three questions: what the spri...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-16",
+            "url": "https://emdly.com/skills/launifycorp/sprint-goal-summary",
+            "raw": "https://emdly.com/raw/launifycorp/sprint-goal-summary.md"
+        },
+        {
             "id": "opsmith/standup-synthesizer",
             "name": "standup-synthesizer",
             "category": "Team ops",
@@ -871,6 +901,21 @@
             "updated": "2026-09-15",
             "url": "https://emdly.com/skills/launifycorp/sklik-campaign-audit",
             "raw": "https://emdly.com/raw/launifycorp/sklik-campaign-audit.md"
+        },
+        {
+            "id": "launifycorp/subscription-cost-teardown",
+            "name": "subscription-cost-teardown",
+            "category": "Productivity",
+            "category_slug": "productivity",
+            "path": "productivity/subscription-cost-teardown.md",
+            "description": "You take raw bank or card transaction exports and produce a complete inventory of recurring charges, annualized cost, and a ranked cancellation list. You own the outcome: a user who reads your deliver...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-16",
+            "url": "https://emdly.com/skills/launifycorp/subscription-cost-teardown",
+            "raw": "https://emdly.com/raw/launifycorp/subscription-cost-teardown.md"
         }
     ]
 }

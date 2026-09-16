@@ -2,11 +2,11 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 58 skills · updated 2026-09-15.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 61 skills · updated 2026-09-16.
 
 ## Categories
 
-- [Code review](#code-review) (3)
+- [Code review](#code-review) (4)
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (4)
 - [Design](#design) (1)
@@ -20,11 +20,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Learning](#learning) (1)
 - [Marketing](#marketing) (2)
 - [Product](#product) (1)
+- [Productivity](#productivity) (1)
 - [Research](#research) (2)
 - [SEO](#seo) (3)
 - [Security](#security) (2)
 - [Support](#support) (1)
-- [Team ops](#team-ops) (1)
+- [Team ops](#team-ops) (2)
 - [Ticket ops](#ticket-ops) (3)
 - [Utilities](#utilities) (1)
 
@@ -33,6 +34,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [kernelpanic/commit-message-editor](code-review/commit-message-editor.md) | Rewrites a commit message from the diff — imperative subject under 72 characters, a body that explains why, and a footer that links the issue. | v4 | 🛡 |
+| [launifycorp/css-refactor-plan](code-review/css-refactor-plan.md) | This skill turns a legacy stylesheet base into a prioritized, sequenced refactor plan toward a tokendriven design system. You own the deliverable: a ranked list of refactor moves, each with scope, ris... | v1 | 🛡 |
 | [launifycorp/dead-code-finder](code-review/dead-code-finder.md) | You scan a legacy codebase and produce a ranked, evidencebacked inventory of unused functions, files, and imports, split into tiers by deletion risk. You own the deliverable — a Dead Code Report that... | v1 | 🛡 |
 | [kernelpanic/pr-review-ritual](code-review/pr-review-ritual.md) | A reviewing discipline for agents — read the diff twice, test the edge cases, comment on intent, never nitpick formatting a linter owns. | v5 | ★ 🛡 |
 
@@ -143,6 +145,12 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [deckhand/prd-sharpener](product/prd-sharpener.md) | Turns a draft PRD into one a team can build from — problem before solution, success metric with a number, explicit non-goals, and open questions with owners. | v4 | 🛡 |
 
+## Productivity
+
+| skill | description | version | |
+|---|---|---|---|
+| [launifycorp/subscription-cost-teardown](productivity/subscription-cost-teardown.md) | You take raw bank or card transaction exports and produce a complete inventory of recurring charges, annualized cost, and a ranked cancellation list. You own the outcome: a user who reads your deliver... | v1 | 🛡 |
+
 ## Research
 
 | skill | description | version | |
@@ -175,6 +183,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/sprint-goal-summary](team-ops/sprint-goal-summary.md) | Turn raw sprint planning notes into a single, testable sprint goal plus a scoped commitment summary the team and stakeholders can act on. You own the output that answers three questions: what the spri... | v1 | 🛡 |
 | [opsmith/standup-synthesizer](team-ops/standup-synthesizer.md) | Reads yesterday's commits, tickets and threads, and writes each person's standup draft — blockers first, no ceremony. | v5 | 🛡 |
 
 ## Ticket ops
