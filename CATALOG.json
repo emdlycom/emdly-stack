@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-16",
-    "count": 61,
+    "generated": "2026-09-18",
+    "count": 64,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -228,6 +228,21 @@
             "raw": "https://emdly.com/raw/kernelpanic/pr-review-ritual.md"
         },
         {
+            "id": "launifycorp/churn-risk-flagging",
+            "name": "churn-risk-flagging",
+            "category": "Data & analytics",
+            "category_slug": "data-analytics",
+            "path": "data-analytics/churn-risk-flagging.md",
+            "description": "You scan support conversations and tag accounts that show cancellation warning signs, producing a ranked risk list with evidence quotes and a recommended next action for each flagged account. You own...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-18",
+            "url": "https://emdly.com/skills/launifycorp/churn-risk-flagging",
+            "raw": "https://emdly.com/raw/launifycorp/churn-risk-flagging.md"
+        },
+        {
             "id": "querydeck/dashboard-metric-definer",
             "name": "dashboard-metric-definer",
             "category": "Data & analytics",
@@ -361,6 +376,21 @@
             "updated": "2026-09-01",
             "url": "https://emdly.com/skills/launifycorp/dependency-audit",
             "raw": "https://emdly.com/raw/launifycorp/dependency-audit.md"
+        },
+        {
+            "id": "launifycorp/dependency-audit-report",
+            "name": "dependency-audit-report",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/dependency-audit-report.md",
+            "description": "This skill produces a prioritized, evidencebacked report of every direct and transitive dependency in a legacy codebase that is outdated, carries a known vulnerability, or is abandoned — each with a c...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-18",
+            "url": "https://emdly.com/skills/launifycorp/dependency-audit-report",
+            "raw": "https://emdly.com/raw/launifycorp/dependency-audit-report.md"
         },
         {
             "id": "kernelpanic/dependency-upgrade-planner",
@@ -586,6 +616,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/shopify-store-audit",
             "raw": "https://emdly.com/raw/launifycorp/shopify-store-audit.md"
+        },
+        {
+            "id": "launifycorp/shopify-theme-audit",
+            "name": "shopify-theme-audit",
+            "category": "Ecommerce",
+            "category_slug": "ecommerce",
+            "path": "ecommerce/shopify-theme-audit.md",
+            "description": "You scan a Shopify theme's Liquid templates, JavaScript, CSS, and asset pipeline, then produce a ranked list of concrete, implementable fixes with estimated impact on Largest Contentful Paint (LCP), I...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-18",
+            "url": "https://emdly.com/skills/launifycorp/shopify-theme-audit",
+            "raw": "https://emdly.com/raw/launifycorp/shopify-theme-audit.md"
         },
         {
             "id": "launifycorp/tos-country-compliance-check",

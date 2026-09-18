@@ -2,17 +2,17 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 61 skills · updated 2026-09-16.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 64 skills · updated 2026-09-18.
 
 ## Categories
 
 - [Code review](#code-review) (4)
 - [Copywriting](#copywriting) (2)
-- [Data & analytics](#data-analytics) (4)
+- [Data & analytics](#data-analytics) (5)
 - [Design](#design) (1)
-- [Development](#development) (11)
+- [Development](#development) (12)
 - [Docs & changelogs](#docs-changelogs) (3)
-- [Ecommerce](#ecommerce) (8)
+- [Ecommerce](#ecommerce) (9)
 - [Email & outreach](#email-outreach) (5)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
@@ -49,6 +49,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/churn-risk-flagging](data-analytics/churn-risk-flagging.md) | You scan support conversations and tag accounts that show cancellation warning signs, producing a ranked risk list with evidence quotes and a recommended next action for each flagged account. You own... | v1 | 🛡 |
 | [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
 | [launifycorp/okr-quarterly-scorecard](data-analytics/okr-quarterly-scorecard.md) | Drafts a monthly investor update email from a founder/CEO to existing investors, combining hard metrics, narrative context, honest risk disclosure, and specific asks. You own the finished draft: metri... | v1 | 🛡 |
 | [launifycorp/prioritize-backlog-rice](data-analytics/prioritize-backlog-rice.md) | You score and rank a set of backlog items using the RICE framework (Reach × Impact × Confidence ÷ Effort) and return a sorted priority table with peritem reasoning and explicit assumptions. You own th... | v1 | 🛡 |
@@ -67,6 +68,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [launifycorp/changelog-from-commits](development/changelog-from-commits.md) | You turn raw commit logs or merged PR lists into a categorized, userfacing changelog entry for a specific release. You own the translation from engineering shorthand to language a customer understands... | v1 | 🛡 |
 | [launifycorp/database-schema-audit](development/database-schema-audit.md) | You review a relational database schema (DDL, ORM models, or introspection dump) and produce a prioritized audit report covering missing or redundant indexes, unused and duplicated columns, normalizat... | v1 | 🛡 |
 | [launifycorp/dependency-audit](development/dependency-audit.md) | Audits a project's dependencies and produces a prioritised upgrade plan: what is a security risk, what has drifted behind, and what is not used at all. It reports and recommends — it does not install,... | v1 | 🛡 |
+| [launifycorp/dependency-audit-report](development/dependency-audit-report.md) | This skill produces a prioritized, evidencebacked report of every direct and transitive dependency in a legacy codebase that is outdated, carries a known vulnerability, or is abandoned — each with a c... | v1 | 🛡 |
 | [kernelpanic/dependency-upgrade-planner](development/dependency-upgrade-planner.md) | Reads a lockfile diff or an outdated report and plans the upgrade — order, breaking changes to read, and the smallest safe steps. | v4 | 🛡 |
 | [sevzero/incident-postmortem](development/incident-postmortem.md) | Drafts blameless postmortems from a timeline and a channel export — impact, contributing factors, and actions with owners. | v4 | 🛡 |
 | [sevzero/k8s-incident-triage](development/k8s-incident-triage.md) | Given kubectl output and alerts, ranks probable causes and proposes the next safe diagnostic step — read-only commands only, never a mutation without a human. | v4 |  |
@@ -95,6 +97,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [launifycorp/product-translator](ecommerce/product-translator.md) | Localises e-shop product records into a new market: titles, descriptions, attributes, categories and slugs. Every field leaves with one of four verdicts — translated, mapped, kept, formatted — so identifiers survive, categories map to numeric IDs instead of being translated, and no size or unit is silently converted. | v1 | 🛡 |
 | [shopmetric/search-console-auditor](ecommerce/search-console-auditor.md) | Audits Google Search Console data — pages losing clicks, queries with impressions but no CTR, and product pages cannibalizing each other. | v5 | 🛡 |
 | [launifycorp/shopify-store-audit](ecommerce/shopify-store-audit.md) | Pre-launch readiness audit of a Shopify store from its URL alone, no admin access. Reads what the storefront publishes about itself — theme, currency, catalogue JSON, and the fixed policy URLs that either resolve or do not — and reports what a first customer would hit. Never completes a checkout, never judges whether a policy is legally adequate. | v1 | 🛡 |
+| [launifycorp/shopify-theme-audit](ecommerce/shopify-theme-audit.md) | You scan a Shopify theme's Liquid templates, JavaScript, CSS, and asset pipeline, then produce a ranked list of concrete, implementable fixes with estimated impact on Largest Contentful Paint (LCP), I... | v1 | 🛡 |
 | [launifycorp/tos-country-compliance-check](ecommerce/tos-country-compliance-check.md) | You review an ecommerce store's terms and conditions (obchodní podmínky) against the mandatory consumer protection law of one selected country and produce a clausebyclause finding list. You own one ou... | v1 | 🛡 |
 
 ## Email & outreach
