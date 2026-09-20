@@ -2,15 +2,15 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 66 skills · updated 2026-09-20.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 73 skills · updated 2026-09-20.
 
 ## Categories
 
 - [Code review](#code-review) (4)
-- [Copywriting](#copywriting) (2)
-- [Data & analytics](#data-analytics) (5)
+- [Copywriting](#copywriting) (4)
+- [Data & analytics](#data-analytics) (8)
 - [Design](#design) (1)
-- [Development](#development) (14)
+- [Development](#development) (15)
 - [Docs & changelogs](#docs-changelogs) (3)
 - [Ecommerce](#ecommerce) (9)
 - [Email & outreach](#email-outreach) (5)
@@ -18,7 +18,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Game development](#game-development) (2)
 - [Hiring](#hiring) (1)
 - [Learning](#learning) (1)
-- [Marketing](#marketing) (2)
+- [Marketing](#marketing) (3)
 - [Product](#product) (1)
 - [Productivity](#productivity) (1)
 - [Research](#research) (2)
@@ -43,6 +43,8 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | skill | description | version | |
 |---|---|---|---|
 | [tonecheck/brand-voice-guard](copywriting/brand-voice-guard.md) | Holds any draft against your voice guide — banned words, sentence rhythm, claims policy — and returns a marked-up pass, not a rewrite. | v6 | 🛡 |
+| [launifycorp/commit-jargon-translator](copywriting/commit-jargon-translator.md) | You turn a raw commit message — or a batch of them — into one or two sentences a nondeveloper understands, written so it can drop straight into a social post, changelog blurb, or release note. You own... | v1 | 🛡 |
+| [launifycorp/headline-ab-generator](copywriting/headline-ab-generator.md) | You turn a draft article into 10 ranked headline variants, each scored for clarity and click appeal, with a recommended pick and a designated A/B pair. You own the decisionready output: a writer or ed... | v1 | 🛡 |
 | [tonecheck/landing-page-copy-editor](copywriting/landing-page-copy-editor.md) | Edits a landing page section by section — one promise above the fold, proof before features, and a CTA that says what happens next. | v3 | 🛡 |
 
 ## Data & analytics
@@ -51,6 +53,9 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 |---|---|---|---|
 | [launifycorp/churn-risk-flagging](data-analytics/churn-risk-flagging.md) | You scan support conversations and tag accounts that show cancellation warning signs, producing a ranked risk list with evidence quotes and a recommended next action for each flagged account. You own... | v1 | 🛡 |
 | [querydeck/dashboard-metric-definer](data-analytics/dashboard-metric-definer.md) | Turns a vague metric request ("active users", "churn") into a precise definition with grain, window, filters and the SQL skeleton — before anyone builds the chart. | v4 | 🛡 |
+| [launifycorp/duplicate-record-finder](data-analytics/duplicate-record-finder.md) | You scan a client dataset against an agreed list of required fields and produce a recordlevel audit that names every row with missing, blank, or placeholder values in those fields. You own the complet... | v1 | 🛡 |
+| [launifycorp/ga4-anomaly-detector](data-analytics/ga4-anomaly-detector.md) | You own the daily or weekly anomaly digest: a ranked list of GA4 metric movements that broke pattern, each attached to the most probable cause and the evidence behind it. The deliverable is not a char... | v1 | 🛡 |
+| [launifycorp/ga4-weekly-digest](data-analytics/ga4-weekly-digest.md) | You own the translation layer between a raw GA4 export and a decision a nonanalyst can act on by Tuesday morning. The deliverable is a onescreen written summary: which metrics moved beyond normal nois... | v1 | 🛡 |
 | [launifycorp/okr-quarterly-scorecard](data-analytics/okr-quarterly-scorecard.md) | Drafts a monthly investor update email from a founder/CEO to existing investors, combining hard metrics, narrative context, honest risk disclosure, and specific asks. You own the finished draft: metri... | v1 | 🛡 |
 | [launifycorp/prioritize-backlog-rice](data-analytics/prioritize-backlog-rice.md) | You score and rank a set of backlog items using the RICE framework (Reach × Impact × Confidence ÷ Effort) and return a sorted priority table with peritem reasoning and explicit assumptions. You own th... | v1 | 🛡 |
 | [querydeck/sql-query-explainer](data-analytics/sql-query-explainer.md) | Explains what a query actually does — joins, filters, gotchas — in plain language, then flags the index it wishes existed. | v5 | ★ 🛡 |
@@ -78,6 +83,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
 | [launifycorp/navigation-flow-mapper](development/navigation-flow-mapper.md) | You map the navigation structure of an existing product as it actually is, not as the team believes it to be, and produce a clickpath inventory that flags dead ends, loops, orphan screens, and any tas... | v1 | 🛡 |
 | [launifycorp/stale-branch-cleaner](development/stale-branch-cleaner.md) | Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote... | v2 | ★ 🛡 |
+| [launifycorp/tech-debt-hotspot-map](development/tech-debt-hotspot-map.md) | You rank files and modules in a codebase by the product of change frequency (churn) and structural complexity, producing a ranked hotspot table plus a short remediation brief. The outcome you own is a... | v1 | 🛡 |
 | [launifycorp/ux-heuristic-audit](development/ux-heuristic-audit.md) | You evaluate a product's screens or flows against Nielsen's 10 usability heuristics, score each heuristic, and produce a severityranked list of violations with concrete, implementable fixes. You own o... | v1 | 🛡 |
 
 ## Docs & changelogs
@@ -141,6 +147,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/commit-log-to-thread](marketing/commit-log-to-thread.md) | This skill converts one week of raw commit history into a numbered X/Twitter thread draft that a human can review, edit, and post. You own the translation from implementation detail to uservisible ben... | v1 | 🛡 |
 | [launifycorp/internal-link-audit](marketing/internal-link-audit.md) | You scan a defined set of blog posts, map the internal links that exist between them, and produce a prioritized list of missing, broken, or wasteful links with exact anchor text and insertion points.... | v1 | 🛡 |
 | [launifycorp/sklik-campaign-audit](marketing/sklik-campaign-audit.md) | You audit a Sklik (Seznam) advertising account and produce a prioritised findings list covering wasted spend, broken or rejected ads, and bidding misconfiguration. You own the deliverable: a written a... | v1 | 🛡 |
 

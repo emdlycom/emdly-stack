@@ -1,6 +1,6 @@
 {
     "generated": "2026-09-20",
-    "count": 66,
+    "count": 73,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -138,6 +138,36 @@
             "raw": "https://emdly.com/raw/tonecheck/brand-voice-guard.md"
         },
         {
+            "id": "launifycorp/commit-jargon-translator",
+            "name": "commit-jargon-translator",
+            "category": "Copywriting",
+            "category_slug": "copywriting",
+            "path": "copywriting/commit-jargon-translator.md",
+            "description": "You turn a raw commit message — or a batch of them — into one or two sentences a nondeveloper understands, written so it can drop straight into a social post, changelog blurb, or release note. You own...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/commit-jargon-translator",
+            "raw": "https://emdly.com/raw/launifycorp/commit-jargon-translator.md"
+        },
+        {
+            "id": "launifycorp/headline-ab-generator",
+            "name": "headline-ab-generator",
+            "category": "Copywriting",
+            "category_slug": "copywriting",
+            "path": "copywriting/headline-ab-generator.md",
+            "description": "You turn a draft article into 10 ranked headline variants, each scored for clarity and click appeal, with a recommended pick and a designated A/B pair. You own the decisionready output: a writer or ed...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/headline-ab-generator",
+            "raw": "https://emdly.com/raw/launifycorp/headline-ab-generator.md"
+        },
+        {
             "id": "tonecheck/landing-page-copy-editor",
             "name": "landing-page-copy-editor",
             "category": "Copywriting",
@@ -256,6 +286,51 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/querydeck/dashboard-metric-definer",
             "raw": "https://emdly.com/raw/querydeck/dashboard-metric-definer.md"
+        },
+        {
+            "id": "launifycorp/duplicate-record-finder",
+            "name": "duplicate-record-finder",
+            "category": "Data & analytics",
+            "category_slug": "data-analytics",
+            "path": "data-analytics/duplicate-record-finder.md",
+            "description": "You scan a client dataset against an agreed list of required fields and produce a recordlevel audit that names every row with missing, blank, or placeholder values in those fields. You own the complet...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/duplicate-record-finder",
+            "raw": "https://emdly.com/raw/launifycorp/duplicate-record-finder.md"
+        },
+        {
+            "id": "launifycorp/ga4-anomaly-detector",
+            "name": "ga4-anomaly-detector",
+            "category": "Data & analytics",
+            "category_slug": "data-analytics",
+            "path": "data-analytics/ga4-anomaly-detector.md",
+            "description": "You own the daily or weekly anomaly digest: a ranked list of GA4 metric movements that broke pattern, each attached to the most probable cause and the evidence behind it. The deliverable is not a char...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/ga4-anomaly-detector",
+            "raw": "https://emdly.com/raw/launifycorp/ga4-anomaly-detector.md"
+        },
+        {
+            "id": "launifycorp/ga4-weekly-digest",
+            "name": "ga4-weekly-digest",
+            "category": "Data & analytics",
+            "category_slug": "data-analytics",
+            "path": "data-analytics/ga4-weekly-digest.md",
+            "description": "You own the translation layer between a raw GA4 export and a decision a nonanalyst can act on by Tuesday morning. The deliverable is a onescreen written summary: which metrics moved beyond normal nois...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/ga4-weekly-digest",
+            "raw": "https://emdly.com/raw/launifycorp/ga4-weekly-digest.md"
         },
         {
             "id": "launifycorp/okr-quarterly-scorecard",
@@ -526,6 +601,21 @@
             "updated": "2026-09-03",
             "url": "https://emdly.com/skills/launifycorp/stale-branch-cleaner",
             "raw": "https://emdly.com/raw/launifycorp/stale-branch-cleaner.md"
+        },
+        {
+            "id": "launifycorp/tech-debt-hotspot-map",
+            "name": "tech-debt-hotspot-map",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/tech-debt-hotspot-map.md",
+            "description": "You rank files and modules in a codebase by the product of change frequency (churn) and structural complexity, producing a ranked hotspot table plus a short remediation brief. The outcome you own is a...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/tech-debt-hotspot-map",
+            "raw": "https://emdly.com/raw/launifycorp/tech-debt-hotspot-map.md"
         },
         {
             "id": "launifycorp/ux-heuristic-audit",
@@ -946,6 +1036,21 @@
             "updated": "2026-08-30",
             "url": "https://emdly.com/skills/launifycorp/grill-me",
             "raw": "https://emdly.com/raw/launifycorp/grill-me.md"
+        },
+        {
+            "id": "launifycorp/commit-log-to-thread",
+            "name": "commit-log-to-thread",
+            "category": "Marketing",
+            "category_slug": "marketing",
+            "path": "marketing/commit-log-to-thread.md",
+            "description": "This skill converts one week of raw commit history into a numbered X/Twitter thread draft that a human can review, edit, and post. You own the translation from implementation detail to uservisible ben...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/commit-log-to-thread",
+            "raw": "https://emdly.com/raw/launifycorp/commit-log-to-thread.md"
         },
         {
             "id": "launifycorp/internal-link-audit",
