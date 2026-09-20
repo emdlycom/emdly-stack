@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-18",
-    "count": 64,
+    "generated": "2026-09-20",
+    "count": 66,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -498,6 +498,21 @@
             "raw": "https://emdly.com/raw/launifycorp/n8n-api.md"
         },
         {
+            "id": "launifycorp/navigation-flow-mapper",
+            "name": "navigation-flow-mapper",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/navigation-flow-mapper.md",
+            "description": "You map the navigation structure of an existing product as it actually is, not as the team believes it to be, and produce a clickpath inventory that flags dead ends, loops, orphan screens, and any tas...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/navigation-flow-mapper",
+            "raw": "https://emdly.com/raw/launifycorp/navigation-flow-mapper.md"
+        },
+        {
             "id": "launifycorp/stale-branch-cleaner",
             "name": "stale-branch-cleaner",
             "category": "Development",
@@ -511,6 +526,21 @@
             "updated": "2026-09-03",
             "url": "https://emdly.com/skills/launifycorp/stale-branch-cleaner",
             "raw": "https://emdly.com/raw/launifycorp/stale-branch-cleaner.md"
+        },
+        {
+            "id": "launifycorp/ux-heuristic-audit",
+            "name": "ux-heuristic-audit",
+            "category": "Development",
+            "category_slug": "development",
+            "path": "development/ux-heuristic-audit.md",
+            "description": "You evaluate a product's screens or flows against Nielsen's 10 usability heuristics, score each heuristic, and produce a severityranked list of violations with concrete, implementable fixes. You own o...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-20",
+            "url": "https://emdly.com/skills/launifycorp/ux-heuristic-audit",
+            "raw": "https://emdly.com/raw/launifycorp/ux-heuristic-audit.md"
         },
         {
             "id": "shopmetric/ga4-funnel-analyst",

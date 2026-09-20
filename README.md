@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 64 skills · updated 2026-09-18.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 66 skills · updated 2026-09-20.
 
 ## Categories
 
@@ -10,7 +10,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Copywriting](#copywriting) (2)
 - [Data & analytics](#data-analytics) (5)
 - [Design](#design) (1)
-- [Development](#development) (12)
+- [Development](#development) (14)
 - [Docs & changelogs](#docs-changelogs) (3)
 - [Ecommerce](#ecommerce) (9)
 - [Email & outreach](#email-outreach) (5)
@@ -76,7 +76,9 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 | [launifycorp/linux-web-server-triage](development/linux-web-server-triage.md) | Read-only triage for a Linux box serving a site over nginx or Apache, with PHP-FPM, bare metal or in Docker. Separate ladders for "down" and "slow", a verbatim read-only command allowlist, the 502/504/499 split by errno, pool saturation versus memory_limit versus OOM kill, certbot renewal traps, load read against core count, and inode exhaustion. Proposes commands; never executes, never mitigates. | v4 | 🛡 |
 | [launifycorp/locale-sync](development/locale-sync.md) | Finds a project's translation files, works out which language is the source of truth, and diffs every other locale against it. It reports coverage and gaps first, then offers two ways forward: fill th... | v1 | 🛡 |
 | [launifycorp/n8n-api](development/n8n-api.md) | Drive an n8n instance through its public REST API — audit workflows, diagnose failed executions, edit safely. Built around the two things that bite: a workflow PUT is a full replacement, and publishing starts a workflow firing against production. Read first, keep the baseline, never publish on your own authority. | v2 | 🛡 |
+| [launifycorp/navigation-flow-mapper](development/navigation-flow-mapper.md) | You map the navigation structure of an existing product as it actually is, not as the team believes it to be, and produce a clickpath inventory that flags dead ends, loops, orphan screens, and any tas... | v1 | 🛡 |
 | [launifycorp/stale-branch-cleaner](development/stale-branch-cleaner.md) | Audits the branches of a git repository, ranks them by how likely they are to be dead, presents the candidates for deletion, and deletes only what the user explicitly confirms — locally, on the remote... | v2 | ★ 🛡 |
+| [launifycorp/ux-heuristic-audit](development/ux-heuristic-audit.md) | You evaluate a product's screens or flows against Nielsen's 10 usability heuristics, score each heuristic, and produce a severityranked list of violations with concrete, implementable fixes. You own o... | v1 | 🛡 |
 
 ## Docs & changelogs
 
