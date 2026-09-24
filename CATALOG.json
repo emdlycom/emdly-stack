@@ -1,6 +1,6 @@
 {
-    "generated": "2026-09-20",
-    "count": 73,
+    "generated": "2026-09-24",
+    "count": 74,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -631,6 +631,21 @@
             "updated": "2026-09-20",
             "url": "https://emdly.com/skills/launifycorp/ux-heuristic-audit",
             "raw": "https://emdly.com/raw/launifycorp/ux-heuristic-audit.md"
+        },
+        {
+            "id": "launifycorp/bestseller-rank-report",
+            "name": "bestseller-rank-report",
+            "category": "Ecommerce",
+            "category_slug": "ecommerce",
+            "path": "ecommerce/bestseller-rank-report.md",
+            "description": "This skill owns a single deliverable: a defensible ranked list of topselling SKUs for a named period, ranked by both units sold and net revenue, with movement since the prior comparable period and the...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-24",
+            "url": "https://emdly.com/skills/launifycorp/bestseller-rank-report",
+            "raw": "https://emdly.com/raw/launifycorp/bestseller-rank-report.md"
         },
         {
             "id": "shopmetric/ga4-funnel-analyst",

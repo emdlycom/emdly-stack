@@ -2,7 +2,7 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 73 skills · updated 2026-09-20.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 74 skills · updated 2026-09-24.
 
 ## Categories
 
@@ -12,7 +12,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 - [Design](#design) (1)
 - [Development](#development) (15)
 - [Docs & changelogs](#docs-changelogs) (3)
-- [Ecommerce](#ecommerce) (9)
+- [Ecommerce](#ecommerce) (10)
 - [Email & outreach](#email-outreach) (5)
 - [Finance](#finance) (1)
 - [Game development](#game-development) (2)
@@ -98,6 +98,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/bestseller-rank-report](ecommerce/bestseller-rank-report.md) | This skill owns a single deliverable: a defensible ranked list of topselling SKUs for a named period, ranked by both units sold and net revenue, with movement since the prior comparable period and the... | v1 | 🛡 |
 | [shopmetric/ga4-funnel-analyst](ecommerce/ga4-funnel-analyst.md) | Reads a GA4 export and finds where the checkout funnel leaks — drop-off by step, device and source — with the one fix to try first. | v5 | ★ 🛡 |
 | [launifycorp/gdpr-clause-scanner](ecommerce/gdpr-clause-scanner.md) | You scan an eshop's terms and conditions, privacy policy, and cookie notice against the disclosures GDPR requires (Articles 12–22, plus ePrivacy consent rules and any national overlay for the selected... | v1 | 🛡 |
 | [cartlift/product-feed-optimizer](ecommerce/product-feed-optimizer.md) | Rewrites product titles and descriptions for Google Shopping feeds — attributes first, brand rules kept, no keyword stuffing. | v5 | 🛡 |
