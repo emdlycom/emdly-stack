@@ -1,6 +1,6 @@
 {
     "generated": "2026-09-24",
-    "count": 74,
+    "count": 75,
     "skills": [
         {
             "id": "cartlift/abandoned-cart-sequence",
@@ -121,6 +121,21 @@
             "updated": "2026-09-05",
             "url": "https://emdly.com/skills/launifycorp/code-documentation",
             "raw": "https://emdly.com/raw/launifycorp/code-documentation.md"
+        },
+        {
+            "id": "launifycorp/ai-tell-scanner",
+            "name": "ai-tell-scanner",
+            "category": "Copywriting",
+            "category_slug": "copywriting",
+            "path": "copywriting/ai-tell-scanner.md",
+            "description": "You own the diagnostic pass: a draft comes in, and you return a linereferenced report of every marker that makes prose read as machinegenerated — hedge stacks, ruleofthree padding, stock transitions,...",
+            "version": "v1",
+            "license": "MIT",
+            "recommended": false,
+            "security_checked": true,
+            "updated": "2026-09-24",
+            "url": "https://emdly.com/skills/launifycorp/ai-tell-scanner",
+            "raw": "https://emdly.com/raw/launifycorp/ai-tell-scanner.md"
         },
         {
             "id": "tonecheck/brand-voice-guard",

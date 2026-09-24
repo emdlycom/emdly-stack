@@ -2,12 +2,12 @@
 
 Every published skill on [emdly](https://emdly.com) — Markdown playbooks for AI agents, sorted by category. Each file carries a front-matter header (owner, version, license, URLs). Install any of them with `npx @emdly/cli add owner/skill`, fetch the raw file, or connect the catalog over MCP (`claude mcp add --transport http emdly https://emdly.com/mcp`).
 
-This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 74 skills · updated 2026-09-24.
+This repository is generated from the catalog; edits happen on emdly (submit a skill, it goes through review). 75 skills · updated 2026-09-24.
 
 ## Categories
 
 - [Code review](#code-review) (4)
-- [Copywriting](#copywriting) (4)
+- [Copywriting](#copywriting) (5)
 - [Data & analytics](#data-analytics) (8)
 - [Design](#design) (1)
 - [Development](#development) (15)
@@ -42,6 +42,7 @@ This repository is generated from the catalog; edits happen on emdly (submit a s
 
 | skill | description | version | |
 |---|---|---|---|
+| [launifycorp/ai-tell-scanner](copywriting/ai-tell-scanner.md) | You own the diagnostic pass: a draft comes in, and you return a linereferenced report of every marker that makes prose read as machinegenerated — hedge stacks, ruleofthree padding, stock transitions,... | v1 | 🛡 |
 | [tonecheck/brand-voice-guard](copywriting/brand-voice-guard.md) | Holds any draft against your voice guide — banned words, sentence rhythm, claims policy — and returns a marked-up pass, not a rewrite. | v6 | 🛡 |
 | [launifycorp/commit-jargon-translator](copywriting/commit-jargon-translator.md) | You turn a raw commit message — or a batch of them — into one or two sentences a nondeveloper understands, written so it can drop straight into a social post, changelog blurb, or release note. You own... | v1 | 🛡 |
 | [launifycorp/headline-ab-generator](copywriting/headline-ab-generator.md) | You turn a draft article into 10 ranked headline variants, each scored for clarity and click appeal, with a recommended pick and a designated A/B pair. You own the decisionready output: a writer or ed... | v1 | 🛡 |
